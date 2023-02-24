@@ -1,0 +1,56 @@
+.signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.signup-container {
+    width: 40%;
+}
+
+.signup-container span {
+    font-size: 40px;
+    text-align: left;
+}
+
+.signup button {
+    height: 50px;
+    width: 240px;
+    font-size: 16px; 
+    background-color: #ebebeb;
+    color: #545454; 
+    border: none; 
+}
+
+.signup-container input {
+    display: block;
+    height: 30px;
+    width: 40%;
+    margin-top: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    width: 100%;
+}
+
+.signup-container form, .signup-newsletter {
+    margin-bottom: 35px;
+}
+
+
+.email-correspondence {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.signup-newsletter {
+    position: relative;
+    right: 8px;
+}
+
+.signup-newsletter span {
+    font-size: 18px;
+}

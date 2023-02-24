@@ -4,7 +4,7 @@
     grid-template-columns: 4fr 1fr;
     justify-items: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 150px;
     margin-bottom: 100px;
 }
 
@@ -39,17 +39,27 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
-.filter-by-price-container span {
+.filter {
     align-self: flex-start;
     font-size: 24px;
+    padding-left: 5px;
 }
 
 .filter-by-price-container hr {
-    width: 100%;
+    width: 97%;
     height: 0.5px; 
     color: #C7C7C7;
     opacity: 0.25;
     margin-bottom: 0px;
+    margin-left: 5px;
 }
+
+.price-slider {
+    position: relative;
+    bottom: 20px;
+}
+

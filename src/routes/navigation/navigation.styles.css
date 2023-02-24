@@ -7,6 +7,8 @@
     width: 100%;
     background-color: #282828;
     color: #FFFFFF;
+    position: fixed; 
+    top: 0;
 }
 
 .navigation-logo img {

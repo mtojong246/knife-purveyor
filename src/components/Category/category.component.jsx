@@ -19,6 +19,10 @@ const Category = () => {
     const categoryTitle = category.toUpperCase().replace(/-/g, ' ')
 
     useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
+
+    useEffect(() => {
         setProducts(categoriesMap[category])
     }, [category, categoriesMap])
 

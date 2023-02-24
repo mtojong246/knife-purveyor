@@ -4,14 +4,16 @@ import { faMagnifyingGlass, faCaretDown } from '@fortawesome/free-solid-svg-icon
 import { faUser } from '@fortawesome/free-regular-svg-icons';
 
 import { Fragment, useState, useContext } from 'react';
-import { Outlet, Link, useNavigate } from 'react-router-dom';
+import { Outlet, NavLink, useNavigate } from 'react-router-dom';
 import { CartContext } from '../../context/cart.context';
+import { Link, animateScroll as scroll } from 'react-scroll'
 
 import CartDropdown from '../../components/Cart-Dropdown/cart-dropdown.component';
 import ShopDropdown from '../../components/Shop-Dropdown/shop-dropdown.component';
 import Footer from '../../components/Footer/footer.component';
 import CartIcon from '../../components/Cart-Icon/cart-icon.component';
 import SearchBar from '../SearchBar/search-bar.component';
+import ScrollToTop from '../../components/Scroll-To-Top/scroll-to-top.component';
 
 
 const Navigation = () => {
@@ -32,19 +34,21 @@ const Navigation = () => {
     const toggleIsShopOpen = () => setIsShopOpen(!isShopOpen);
     const toggleIsSearchOpen = () => setIsSearchOpen(!isSearchOpen);
 
+    
+
     return (
         <Fragment>
             <div className='navigation-container'>
-                <Link to='/' className='navigation-logo'>
+                <NavLink to='/' className='navigation-logo'>
                     <img src={'https://www.knifepurveyor.com/wp-content/uploads/2020/12/Logo-TM-520.png'} alt='logo' />
-                </Link>
+                </NavLink>
                 <ul className='navigation-links'>
                     <li className='shop-nav'>
                         <span onClick={toggleIsShopOpen}>Shop<FontAwesomeIcon className='up-caret' icon={faCaretDown}/></span>
                         {isShopOpen && <ShopDropdown />}
                     </li>
                     <li><span>Appraisal</span></li>
-                    <li><span>About</span></li>
+                    <li><Link activeClass="active" to="about" spy={true} smooth={true} offset={-150} duration={1000} delay={100}><span>About</span></Link></li>
                     <li><span onClick={goToContact}>Contact</span></li>        
                     <li><span>Sell</span></li>
                 </ul>
@@ -60,6 +64,7 @@ const Navigation = () => {
                     </div>   
                 </div>   
             </div>
+            <ScrollToTop />
             <Outlet />
             <Footer />
         </Fragment>

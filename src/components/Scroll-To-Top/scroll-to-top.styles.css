@@ -1,0 +1,19 @@
+.scroll-container {
+    z-index: 2;
+    position: absolute;
+    top: 550px;
+    right: 60px;
+}
+
+.scroll-to-top {
+    color: #c7c7c7;
+    opacity: 0.5;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+}
+
+.scroll-to-top:hover {
+    opacity: 1;
+    cursor: pointer;
+}

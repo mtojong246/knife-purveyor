@@ -1,6 +1,12 @@
 import './contact-styles.css';
+import { useEffect } from 'react';
 
 const Contact = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
+
     return (
         <div className='contact-container'>
             <div className='contact-input'>
@@ -9,7 +15,7 @@ const Contact = () => {
                     <input type='text' id='contact-first-name' placeholder='First name' />
                     <input type='text' id='contact-last-name' placeholder='Last name' />
                     <input type='email' id='contact-email' placeholder='Email address' />
-                    <input type='number' id='contact-number' placeholder='Phone number' />
+                    <input type='text' id='contact-number' placeholder='Phone number' />
                 </form>
                 <button className='contact-submit'>Submit</button>
             </div>

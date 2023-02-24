@@ -13,6 +13,10 @@ const Shop = () => {
     const [maxPrice, setMaxPrice] = useState(36500);
 
     useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
+
+    useEffect(() => {
         setProducts(categoriesMap);
     }, [categoriesMap])
 
@@ -49,9 +53,11 @@ const Shop = () => {
             </div>
             <div className='shop-sort-container'>
                 <div className='filter-by-price-container'>
-                    <span>Filter By Price</span>
+                    <span className='filter'>Filter By Price</span>
                     <hr /> 
-                    <PriceSlider onMinChange={onMinChange} onMaxChange={onMaxChange}/>
+                    <div className='price-slider'>
+                        <PriceSlider onMinChange={onMinChange} onMaxChange={onMaxChange}/>
+                    </div>
                 </div>
             </div>
         </div>

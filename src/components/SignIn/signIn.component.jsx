@@ -2,8 +2,13 @@ import { signInWithGooglePopup, createUserDocumentFromAuth } from '../../utils/f
 
 import './signIn.styles.css';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const SignIn = () => {
+    
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
 
     const logGoogleUser = async () => {
         const {user} = await signInWithGooglePopup();
@@ -14,13 +19,16 @@ const SignIn = () => {
         <div className='signin'>
             <div className='signin-container'>
                 <span>Sign In</span>
-                <form>
-                    <input type='email' placeholder='Username or email address' />
+                <form className='signin-form'>
+                    <input type='email' placeholder='Email address' />
                     <input type='password' placeholder='Password' />
                 </form>
-                <p>Remember me</p>
-                <button type='button'>Log in</button>
-                <button type='button' onClick={logGoogleUser}>Google Sign in</button>
+                <input type='checkbox' /><p className='remember-me'>Remember me</p>
+                <br />
+                <div className='signin-button-container'>
+                    <button type='button'>Log in</button>
+                    <button type='button' onClick={logGoogleUser}>Google Sign in</button>
+                </div>
                 <p>Don't have an account? <Link to='/sign-in/sign-up'>Sign up!</Link></p>
                 <p>Forgot password?</p>
             </div>

@@ -107,8 +107,9 @@ const PriceSlider = ({ onMinChange, onMaxChange }) => {
                 <input id="toSlider" type="range" defaultValue="36500" min='0' max='36500' onChange={changeMaxPrice}/>
             </div>
             <div className="form_control">
-                <input className="form_control_container__time__input" type="number" id="fromInput" defaultValue="0" min='0' max='36500' onChange={fromInputHandler}/>
-                <input className="form_control_container__time__input" type="number" id="toInput" defaultValue="36500" min='0' max='36500' onChange={toInputHandler}/>
+                <span>$<input className="form_control_container__time__input" type="number" id="fromInput" defaultValue="0" min='0' max='36500' onChange={fromInputHandler}/></span>
+                <span>-</span>
+                <span>$<input className="form_control_container__time__input" type="number" id="toInput" defaultValue="36500" min='0' max='36500' onChange={toInputHandler}/></span>
             </div>
         </div>
     )
