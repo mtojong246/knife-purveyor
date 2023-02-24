@@ -1,0 +1,22 @@
+.customer-service {
+    align-self: flex-start;
+    margin-top: 20px;
+}
+
+.customer-service span {
+    font-size: 32px;
+}
+
+.customer-links {
+    margin-top: 45px;
+    margin-bottom: 100px;
+}
+
+.customer-links p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.hours {
+    margin-top: 45px;
+}

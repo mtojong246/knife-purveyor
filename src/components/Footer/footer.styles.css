@@ -1,0 +1,11 @@
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    justify-items: left;
+    align-items: flex-start;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 24px;
+    background-color: #282828;
+    color: #ffffff;
+}

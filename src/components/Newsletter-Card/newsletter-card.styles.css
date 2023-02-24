@@ -1,0 +1,50 @@
+.newsletter-card-container {
+    width: 354px;
+    height: 689px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 5px 1px grey;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.newsletter-card-text {
+    align-self: flex-start;
+    text-align: center;
+    margin-top: 40px;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    justify-items: center;
+    align-items: center;
+    height: 500px;
+    width: 300px; 
+
+}
+
+.newsletter-card-text span {
+    font-size: 30px;
+    color: #545454;
+    width: 300px;
+    height: 100px;
+}
+
+.newsletter-card-text p {
+    font-size: 18px;
+    color: #545454;
+    width: 300px;
+    height: 200px;
+    margin-top: 50px;
+}
+
+.read-more {
+    width: 134px;
+    font-size: 16px;
+    color: #545454;
+    background-color: #EBEBEB;
+    border: none;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    cursor: pointer;
+}

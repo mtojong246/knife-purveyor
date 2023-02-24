@@ -1,0 +1,20 @@
+.search-bar-container {
+    position: absolute;
+    top: 100px;
+    right: 120px;
+    background-color: #282828;
+    width: 270px;
+    height: 50px;
+    text-align: center;
+    padding: 10px 10px 0px 10px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.search-bar-container input {
+    height: 30px;
+    width: 90%;
+    margin: 0px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+}

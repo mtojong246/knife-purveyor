@@ -1,0 +1,25 @@
+.published-container {
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.published-title {
+    font-size: 32px;
+    color: #545454;
+}
+
+hr {
+    width: 90px;
+    height: 1px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    background-color: #7D7D7D;
+}
+
+.magazine-covers {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}

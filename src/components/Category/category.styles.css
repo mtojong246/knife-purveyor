@@ -1,0 +1,51 @@
+.category-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.category-cards-container {
+    text-align: center;
+}
+
+.category-title {
+    font-size: 34px;
+}
+
+.category-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(autofill, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 50px 30px;
+    margin-top: 100px;
+}
+
+.category-sort-container {
+    align-self: flex-start;
+}
+
+.category-filter-by-price-container {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-filter-by-price-container span {
+    align-self: flex-start;
+    font-size: 24px;
+}
+
+.category-filter-by-price-container hr {
+    width: 100%;
+    height: 0.5px; 
+    color: #C7C7C7;
+    opacity: 0.25;
+    margin-bottom: 0px;
+}

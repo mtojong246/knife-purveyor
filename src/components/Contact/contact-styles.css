@@ -1,0 +1,50 @@
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-top: 75px;
+    margin-left: 100px;
+}
+
+.contact-input {
+    width: 90%;
+}
+
+.contact-input span {
+    font-size: 40px;
+    text-align: left;
+}
+
+.contact-input button {
+    height: 40px;
+    width: 120px;
+    font-size: 16px; 
+    background-color: #ebebeb;
+    color: #545454; 
+    border: none; 
+    margin-top: 40px;
+}
+
+.contact-form input {
+    display: block;
+    height: 30px;
+    width: 100%;
+    margin-top: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.contact-info h2 {
+    margin-bottom: 0px;
+}
+
+.contact-info p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.contact-info {
+    margin-top: 0px;
+}
+

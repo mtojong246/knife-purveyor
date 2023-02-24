@@ -1,0 +1,69 @@
+.newsletter-signup {
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr 1fr;
+    justify-items: left;
+    align-items: flex-start;
+    width: 90%;
+}
+
+.newsletter-signup span {
+    align-self: center;
+    font-size: 32px;
+    margin-bottom: 0px;
+}
+
+.newsletter-signup-form {
+    width: 100%;
+}
+
+
+.newsletter-signup-form input {
+    display: block;
+    height: 30px;
+    width: 100%;
+    margin-top: 30px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: #282828;
+    color: white;
+}
+
+.newsletter-signup button {
+    height: 50px;
+    width: 100%;
+    font-size: 16px; 
+    background-color: #282828;
+    color: white; 
+    border: 2px solid white; 
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.newsletter-signup button:hover {
+    background-color: white;
+    color: #282828;
+    cursor: pointer;
+}
+
+.brand-icons {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: left;
+    align-items: center;
+    padding-top: 30px;
+    gap: 20px;
+}
+
+.facebook, .instagram, .youtube {
+    height: 50px;
+    width: 50px;
+}
+
+.facebook:hover, .instagram:hover, .youtube:hover {
+    cursor: pointer;
+}
+
+
+
+

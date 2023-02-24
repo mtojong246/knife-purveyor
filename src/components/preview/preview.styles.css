@@ -1,0 +1,32 @@
+.preview {
+    text-align: center;
+}
+
+.preview-title {
+    margin-top: 100px;
+}
+
+.preview-title span {
+    font-size: 32px;
+    color: #545454;
+}
+
+.preview-title span:hover {
+    cursor: pointer;
+}
+
+hr {
+    width: 90px;
+    height: 1px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    background-color: #7D7D7D;
+}
+
+.preview-container {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 100px;
+}

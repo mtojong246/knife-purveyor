@@ -1,0 +1,40 @@
+.signin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.signin-container {
+    width: 40%;
+}
+
+.signin-container span {
+    font-size: 40px;
+    text-align: left;
+}
+
+.signin-container form {
+    margin-bottom: 35px;
+}
+
+
+.signin-container button {
+    height: 40px;
+    width: 120px;
+    font-size: 16px; 
+    background-color: #ebebeb;
+    color: #545454; 
+    border: none; 
+}
+
+.signin-container input {
+    display: block;
+    height: 30px;
+    width: 40%;
+    margin-top: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    width: 100%;
+}
