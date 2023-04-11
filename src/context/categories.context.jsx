@@ -4,10 +4,12 @@ import { getCategoriesAndDocuments } from "../utils/firebase/firebase.utils";
 
 export const CategoriesContext = createContext({
     categoriesMap: {},
+    isLoading: true,
 });
 
 export const CategoriesProvider = ({children}) => {
     const [ categoriesMap, setCategoriesMap ] = useState({});
+    const [ isLoading, setIsLoading ] = useState(true);
 
     //useEffect(() => {
     //    addCollectionAndDocuments('categories', SHOP_DATA);
@@ -17,11 +19,14 @@ export const CategoriesProvider = ({children}) => {
         const getCategoriesMap = async () => {
             const categoryMap = await getCategoriesAndDocuments();
             setCategoriesMap(categoryMap);
+            setIsLoading(false);
         }
         getCategoriesMap();
     }, [])
 
-    const value = {categoriesMap};
+    
+
+    const value = {categoriesMap, isLoading};
 
     return (
         <CategoriesContext.Provider value={value}>{children}</CategoriesContext.Provider>

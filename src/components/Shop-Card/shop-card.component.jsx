@@ -1,16 +1,21 @@
 import './shop-card.styles.css';
 import { useContext } from 'react';
 import { CartContext } from '../../context/cart.context';
+import { Link } from 'react-router-dom';
 
 const ShopCard = ({ product }) => {
     const { img, name, price } = product; 
     const { addItemToCart } = useContext(CartContext);
 
+    const newName = name.toLowerCase().replace(/\s+/g, '-') 
+
     return (
         <div className='shop-card-container'>
-            <div className='shop-card-image'>
-                <img src={img} alt='shop-knife' />
-            </div>
+            <Link to={`/shop/knives/${newName}`}>
+                <div className='shop-card-image'>
+                    <img src={img} alt='shop-knife' />
+                </div>
+            </Link>
             <div className='shop-card-description'>
                 <div className='shop-card-title'>
                     <span>{name}</span>

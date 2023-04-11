@@ -1,50 +1,46 @@
 .newsletter-card-container {
-    width: 354px;
-    height: 689px;
+    width: 25vw;
     background-color: #ffffff;
     box-shadow: 0 5px 5px 1px grey;
     border-radius: 15px;
-    display: grid;
-    grid-template-rows: 4fr 1fr;
-    justify-items: center;
+    padding-bottom: 2vw;
+}
+
+.newsletter-title-container {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    height: 10vw;
 }
 
 .newsletter-card-text {
-    align-self: flex-start;
     text-align: center;
-    margin-top: 40px;
-    display: grid;
-    grid-template-rows: 1fr 4fr;
-    justify-items: center;
-    align-items: center;
-    height: 500px;
-    width: 300px; 
-
+    padding: 2vw 4vw;
+    height: 55vh;
 }
 
 .newsletter-card-text span {
-    font-size: 30px;
+    font-size: 1.5vw;
     color: #545454;
-    width: 300px;
-    height: 100px;
 }
 
 .newsletter-card-text p {
-    font-size: 18px;
+    font-size: 1vw;
     color: #545454;
-    width: 300px;
-    height: 200px;
-    margin-top: 50px;
+    
 }
 
 .read-more {
-    width: 134px;
-    font-size: 16px;
+    font-size: 1vw;
     color: #545454;
     background-color: #EBEBEB;
     border: none;
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding: 1vw 2vw;
+    border-radius: 10px;
+}
+
+.read-more:hover {
+    background-color: #6e5b8b;
+    color: white;
     cursor: pointer;
 }

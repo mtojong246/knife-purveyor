@@ -1,17 +1,18 @@
-.shop-footer-container {
-    margin-top: 20px;
-    margin-left: 60px;
-}
-
 .shop-footer-container span{
-    font-size: 32px;
+    font-size: 2vw;
 }
 
 .shop-links {
-    margin-top: 45px;
+    margin-top: 2vw;
+    font-size: 0.8vw;
 }
 
 .shop-links p:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+.shop-link:active, .shop-link:link, .shop-link:visited {
+    color: white;
+    text-decoration: none;
 }

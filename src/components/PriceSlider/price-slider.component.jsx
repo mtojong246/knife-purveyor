@@ -1,6 +1,6 @@
 import './price-slider.styles.css';
 
-const PriceSlider = ({ onMinChange, onMaxChange }) => {
+const PriceSlider = ({ onMinChange, onMaxChange}) => {
 
 
     function controlFromInput(fromSlider, fromInput, toInput, controlSlider) {
@@ -99,6 +99,8 @@ const PriceSlider = ({ onMinChange, onMaxChange }) => {
         controlToSlider(fromSlider, toSlider, toInput);
         onMaxChange(toSlider);
     }
+    
+    
 
     return (
         <div className="range_container">

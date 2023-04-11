@@ -2,8 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
-    margin-bottom: 77px;
+    height: 100vh;
 }
 
 .signin-container {
@@ -11,41 +10,50 @@
 }
 
 .signin-container span {
-    font-size: 40px;
+    font-size: 2.5vw;
     text-align: left;
 }
 
 .signin-container form {
-    margin-bottom: 35px;
+    margin: 2vw 0;
 }
 
 
 .signin-container button {
-    height: 50px;
-    width: 240px;
-    font-size: 16px; 
+    padding: 1vw 3vw;
+    font-size: 1vw; 
     background-color: #ebebeb;
     color: #545454; 
     border: none; 
 }
 
-.signin-form input {
-    display: block;
-    height: 30px;
-    width: 40%;
-    margin-top: 30px;
-    border: none;
-    border-bottom: 1px solid black;
-    font-size: 20px;
-    width: 100%;
+.signin-container p {
+    font-size: 0.8vw;
 }
 
-.remember-me {
-    display: inline-block;
-    padding-left: 10px;
+.signin-form input {
+    display: block;
+    margin: 2vw 0;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 1.5vw;
+    width: 100%;
 }
 
 .signin-button-container {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 2vw;
+}
+
+.google-button:hover {
+    background-color: #4285F4;
+    color: white;
+    cursor: pointer;
+}
+
+.signin-button:hover, .signout-button:hover {
+    background-color: #6e5b8b;
+    color: white;
+    cursor: pointer;
 }

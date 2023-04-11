@@ -3,25 +3,26 @@
     grid-template-rows: 1fr 3fr 1fr 1fr;
     justify-items: left;
     align-items: flex-start;
-    width: 90%;
+    width: 45vw;
 }
 
 .newsletter-signup span {
     align-self: center;
-    font-size: 32px;
+    font-size: 1.8vw;
     margin-bottom: 0px;
 }
 
 .newsletter-signup-form {
     width: 100%;
+    margin-bottom: 2vw;
 }
 
 
 .newsletter-signup-form input {
     display: block;
-    height: 30px;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 2vw;
+    font-size: 1vw;
     border: none;
     border-bottom: 1px solid white;
     background-color: #282828;
@@ -29,15 +30,13 @@
 }
 
 .newsletter-signup button {
-    height: 50px;
     width: 100%;
-    font-size: 16px; 
+    font-size: 1vw;
     background-color: #282828;
     color: white; 
     border: 2px solid white; 
-    margin-top: 20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    margin-top: 0.5vw;
+    padding: 1vw 0;
 }
 
 .newsletter-signup button:hover {
@@ -51,13 +50,13 @@
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: left;
     align-items: center;
-    padding-top: 30px;
-    gap: 20px;
+    padding-top: 1vw;
+    gap: 1vw;
 }
 
 .facebook, .instagram, .youtube {
-    height: 50px;
-    width: 50px;
+    height: 2.5vw;
+    width: 2.5vw;
 }
 
 .facebook:hover, .instagram:hover, .youtube:hover {

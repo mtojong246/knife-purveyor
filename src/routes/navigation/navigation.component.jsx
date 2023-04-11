@@ -1,6 +1,6 @@
-import './navigation.styles.css';
+import './navigation.styles.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagnifyingGlass, faCaretDown } from '@fortawesome/free-solid-svg-icons';
+import { faMagnifyingGlass, faCaretDown, faCaretUp } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
 
 import { Fragment, useState, useContext } from 'react';
@@ -17,11 +17,14 @@ import ScrollToTop from '../../components/Scroll-To-Top/scroll-to-top.component'
 
 
 const Navigation = () => {
-    const [isShopOpen, setIsShopOpen] = useState(false);
     const [isSearchOpen, setIsSearchOpen] = useState(false);
-    const { isCartOpen } = useContext(CartContext);
+    const { isCartOpen, isShopOpen, setIsShopOpen } = useContext(CartContext);
 
     const navigate = useNavigate();
+
+    const goToAppraisal = () => {
+        navigate('./appraisal');
+    }
 
     const goToContact = () => {
         navigate('./contact');
@@ -34,7 +37,6 @@ const Navigation = () => {
     const toggleIsShopOpen = () => setIsShopOpen(!isShopOpen);
     const toggleIsSearchOpen = () => setIsSearchOpen(!isSearchOpen);
 
-    
 
     return (
         <Fragment>
@@ -44,13 +46,12 @@ const Navigation = () => {
                 </NavLink>
                 <ul className='navigation-links'>
                     <li className='shop-nav'>
-                        <span onClick={toggleIsShopOpen}>Shop<FontAwesomeIcon className='up-caret' icon={faCaretDown}/></span>
+                        <span onClick={toggleIsShopOpen}>Shop<FontAwesomeIcon className='caret' icon={isShopOpen ? faCaretUp : faCaretDown} /></span>
                         {isShopOpen && <ShopDropdown />}
                     </li>
-                    <li><span>Appraisal</span></li>
+                    <li><span onClick={goToAppraisal}>Appraisal</span></li>
                     <li><Link activeClass="active" to="about" spy={true} smooth={true} offset={-150} duration={1000} delay={100}><span>About</span></Link></li>
                     <li><span onClick={goToContact}>Contact</span></li>        
-                    <li><span>Sell</span></li>
                 </ul>
                 <div className='navigation-icons'>
                     <div className='search-bar-trigger'>

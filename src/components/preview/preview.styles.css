@@ -1,13 +1,15 @@
 .preview {
     text-align: center;
+    padding: 5vw 0;
 }
 
-.preview-title {
-    margin-top: 100px;
+.preview hr {
+    width: 5vw;
+    border: none;
 }
 
 .preview-title span {
-    font-size: 32px;
+    font-size: 1.5vw;
     color: #545454;
 }
 
@@ -15,18 +17,9 @@
     cursor: pointer;
 }
 
-hr {
-    width: 90px;
-    height: 1px;
-    margin-top: 30px;
-    margin-bottom: 70px;
-    background-color: #7D7D7D;
-}
-
 .preview-container {
-    display: grid;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 100px;
+    gap: 7vw;
 }

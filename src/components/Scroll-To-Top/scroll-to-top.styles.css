@@ -1,15 +1,15 @@
 .scroll-container {
     z-index: 2;
     position: absolute;
-    top: 550px;
-    right: 60px;
+    bottom: 5vw;
+    right: 5vw;
 }
 
 .scroll-to-top {
     color: #c7c7c7;
     opacity: 0.5;
-    height: 40px;
-    width: 40px;
+    height: 3vw;
+    width: 3vw;
     position: fixed;
 }
 

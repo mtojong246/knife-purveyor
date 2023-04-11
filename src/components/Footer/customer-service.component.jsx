@@ -1,4 +1,6 @@
 import './customer-service.styles.css';
+import { NavLink } from 'react-router-dom';
+import { Link, animateScroll as scroll } from 'react-scroll'
 
 const CustomerService = () => {
     return (
@@ -7,11 +9,11 @@ const CustomerService = () => {
             <div className='customer-links'>
                 <p>About KnifePurveyor and Michael A Donato</p>
                 <p>Testimonials</p>
-                <p>Log In / Register</p>
-                <p>Contact Us</p>
+                <NavLink className='customer-link' to='/sign-in'><p>Log In / Register</p></NavLink>
+                <NavLink className='customer-link' to='/contact'><p>Contact Us</p></NavLink>
                 <p>Company Policies</p>
                 <p>Privacy Policy</p>
-                <p>Published In</p>
+                <Link activeClass="active" to="published" spy={true} smooth={true} offset={-150} duration={1000} delay={100}><p>Published In</p></Link>
                 <p>Links</p>
             </div>
             <span>Hours of Operation</span>

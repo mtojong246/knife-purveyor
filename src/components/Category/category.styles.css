@@ -1,19 +1,18 @@
 .category-container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-    justify-items: center;
-    align-items: center;
-    margin-top: 150px;
-    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5vw;
+    gap: 5vw;
 }
 
 .category-cards-container {
     text-align: center;
+    width: 70vw;
 }
 
 .category-title {
-    font-size: 34px;
+    font-size: 2vw;
 }
 
 .category-cards {
@@ -22,12 +21,15 @@
     grid-template-rows: repeat(autofill, 1fr);
     justify-items: center;
     align-items: center;
-    gap: 50px 30px;
-    margin-top: 100px;
+    margin-top: 3vw;
+    gap: 3vw;
 }
 
 .category-sort-container {
-    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    width: 20vw;
 }
 
 .category-filter-by-price-container {
@@ -38,8 +40,8 @@
 }
 
 .category-filter-by-price-container span {
-    align-self: flex-start;
-    font-size: 24px;
+    align-self: flex-end;
+    font-size: 1vw;
 }
 
 .category-filter-by-price-container hr {
@@ -48,4 +50,5 @@
     color: #C7C7C7;
     opacity: 0.25;
     margin-bottom: 0px;
+    margin-left: 5px;
 }

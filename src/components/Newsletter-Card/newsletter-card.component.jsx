@@ -6,7 +6,9 @@ const NewsletterCard = ({ newsletter }) => {
     return (
         <div className='newsletter-card-container'>
             <div className='newsletter-card-text'>
-                <span>{title}</span>
+                <div className='newsletter-title-container'>
+                    <span>{title}</span>
+                </div>
                 <p>{description}</p>
             </div>
             <a href={link}>

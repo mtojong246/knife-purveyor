@@ -1,0 +1,23 @@
+.appraisal-container {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw;
+}
+
+.appraisal-container span {
+    font-size: 2.5vw;
+    padding-bottom: 2vw;
+} 
+
+.appraisal-text {
+    text-align: left;
+    font-size: 1vw;
+}
+
+.appraisal-text p:last-child {
+    font-weight: bold;
+}

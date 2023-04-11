@@ -15,7 +15,7 @@ const PreviewCard = ({ preview }) => {
                 <span>{title}</span>
                 <p>{description}</p>
             </div>
-            <Link to={`/shop/${newTitle}-knives`}><button className='view-more'>View More</button></Link>
+            <Link to={`/shop/${newTitle}-knives`}><button>View More</button></Link>
         </div>
     )
 }

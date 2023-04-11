@@ -52,9 +52,9 @@
 }
 
 .return-button button {
-    font-size: 16px;
+    font-size: 1vw;
     color: #545454;
-    padding: 16px 30px;
+    padding: 1vw 3vw;
     border: none;
 }
 

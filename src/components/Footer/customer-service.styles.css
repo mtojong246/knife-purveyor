@@ -1,15 +1,15 @@
 .customer-service {
     align-self: flex-start;
-    margin-top: 20px;
 }
 
 .customer-service span {
-    font-size: 32px;
+    font-size: 2vw;
 }
 
 .customer-links {
-    margin-top: 45px;
-    margin-bottom: 100px;
+    margin-top: 2vw;
+    margin-bottom: 4vw;
+    font-size: 0.8vw;
 }
 
 .customer-links p:hover {
@@ -18,5 +18,14 @@
 }
 
 .hours {
-    margin-top: 45px;
+    margin-top: 2vw;
+}
+
+.hours p {
+    font-size: 0.8vw;
+}
+
+.customer-link:active, .customer-link:link, .customer-link:visited {
+    color: white;
+    text-decoration: none;
 }

@@ -1,27 +1,22 @@
 .about-container {
     text-align: center;
+    padding: 5vw 10vw;
 }
 
-.about-header {
-    margin-top: 100px;
+.about-container hr {
+    width: 5vw;
+    border: none;
 }
 
-hr {
-    width: 90px;
-    height: 1px;
-    margin-top: 30px;
-    margin-bottom: 70px;
-    background-color: #7D7D7D;
-}
 
 .about-title {
-    font-size: 32px;
+    font-size: 1.5vw;
     color: #545454;
 }
 
 .about-text p {
-    font-size: 20px;
+    font-size: 1vw;
     text-align: left;
-    margin: 20px 130px 20px 130px;
     color: #545454;
+    margin: 4vh 0;
 }

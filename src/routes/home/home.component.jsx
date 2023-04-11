@@ -1,4 +1,4 @@
-import './home.styles.css';
+import { useEffect } from 'react';
 
 import Preview from '../../components/preview/preview.component';
 import About from '../../components/About/about.component';
@@ -10,8 +10,13 @@ import Knowledge from '../../components/Knowledge/knowledge.component';
 import Newsletter from '../../components/Newsletter/newsletter.component';
 
 const Home = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
+
     return (
-        <div className='home-container'>
+        <>
             <MainBackground />
             <Preview />
             <About />
@@ -20,7 +25,7 @@ const Home = () => {
             <Experience />
             <Knowledge />
             <Newsletter />
-        </div>
+        </>
         
     )
 }

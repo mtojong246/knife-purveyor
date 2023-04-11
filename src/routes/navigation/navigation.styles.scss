@@ -1,0 +1,53 @@
+.navigation-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw;
+    background-color: #282828;
+    color: #FFFFFF;
+    z-index: 2;
+
+}
+
+.navigation-logo img {
+    height: 3vw;
+    width: 8vw;
+}
+
+.caret {
+    height: 0.75vw;;
+    width: 0.75vw;
+    padding-left: 0.2vw;
+}
+
+.navigation-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    gap: 1.5vw;
+    list-style-type: none;
+}
+
+.navigation-links > li:hover span{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.navigation-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vw;
+    font-size: 1vw;
+}
+
+.navigation-icons span:hover, .navigation-icons div:hover {
+    cursor: pointer;
+}
+
+
+.shopping-cart:hover {
+    cursor: pointer;
+}
+
