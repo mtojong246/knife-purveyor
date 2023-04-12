@@ -1,0 +1,17 @@
+.search-results-container {
+    margin: 5vw 0;
+    text-align: center;
+}
+
+.result-title {
+    font-size: 2vw;
+}
+
+.search-results-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(autofill, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin-top: 3vw;
+}

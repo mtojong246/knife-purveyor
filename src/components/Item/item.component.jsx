@@ -47,7 +47,7 @@ const Item = () => {
                 </div>
                 <div className='ind-product-info'>
                     <span className='product-name'>{selectedItem[0].name}</span>
-                    <p>${selectedItem[0].price}</p>
+                    <p>${selectedItem[0].price}.00</p>
                     <button onClick={() => addItemToCart(selectedItem[0])}>Add to Cart</button>
                     <p>Product Details</p>
                     <div className='product-details'>
