@@ -29,3 +29,23 @@
     color: white;
     text-decoration: none;
 }
+
+@media screen and (max-width: 480px) {
+    .customer-service span {
+        font-size: 5.5vw;
+    }
+
+    .customer-links {
+        margin-top: 5vw;
+        margin-bottom: 10vh;
+        font-size: 4vw;
+    }
+
+    .hours {
+        margin-top: 5vw;
+    }
+    
+    .hours p {
+        font-size: 4vw;
+    }
+}

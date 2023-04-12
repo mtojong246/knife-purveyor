@@ -52,10 +52,6 @@ const SignIn = () => {
         await signInWithGooglePopup();
     }
 
-    const signOutHandler = async () => {
-        await signOutUser();
-    }
-
     return (
         <div className='signin'>
             <div className='signin-container'>
@@ -66,7 +62,7 @@ const SignIn = () => {
                 </form>
                 <br />
                 <div className='signin-button-container'>
-                    {currentUser ? <button className='signout-button' type='button' onClick={signOutHandler}>Sign Out</button> : <button className='signin-button' type='submit' form='sign-in-form'>Log in</button>}
+                    <button className='signin-button' type='submit' form='sign-in-form'>Log in</button>
                     <button className='google-button' type='button' onClick={logGoogleUser}>Google Sign in</button>
                 </div>
                 <p>Don't have an account? <Link to='/sign-in/sign-up'>Sign up!</Link></p>

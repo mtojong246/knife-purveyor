@@ -30,3 +30,21 @@
     height: 100%;
 
 }
+
+@media screen and (max-width: 480px) {
+    .published-container {
+        padding-bottom: 10vh;
+    }
+
+    .published-title {
+        font-size: 5.5vw;
+    }
+
+    .magazine-covers {
+        flex-direction: column;
+    }
+
+    .mag-img {
+        width: 80vw;
+    }
+}

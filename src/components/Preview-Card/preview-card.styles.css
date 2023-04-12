@@ -43,3 +43,29 @@
     color: white;
     cursor: pointer;
 }
+
+@media screen and (max-width: 480px) {
+    .card-container {
+        width: 75vw;
+        padding-bottom: 6vw;
+    }
+
+    .card-text {
+        padding: 6vw 8vw;
+    }
+
+    .card-text span {
+        font-size: 5.5vw;
+    }
+
+    .card-text p {
+        font-size: 4vw;
+        height: 20vh;
+ 
+    }
+
+    .card-container button {
+        font-size: 5vw;
+        padding: 5vw 6vw;
+    }
+}

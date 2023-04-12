@@ -31,3 +31,26 @@
     text-align: left;
     width: 26vw;
 }
+
+@media screen and (max-width: 480px) {
+    .american-container {
+        padding: 10vh 5vw;
+    }
+
+    .american-title {
+        font-size: 5.5vw;
+    }
+
+    .american-content {
+        flex-direction: column;
+    }
+
+    .american-content p {
+        font-size: 4.5vw;
+        width: 90%;
+    }
+
+    .american-content img {
+        height: 28vh;
+    }
+}

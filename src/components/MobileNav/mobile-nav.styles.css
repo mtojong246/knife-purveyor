@@ -1,0 +1,19 @@
+.mobile-nav-container {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .mobile-nav-container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 3vw;
+        background-color: #282828;
+        color: #FFFFFF;
+        font-size: 3vw;
+    }
+
+    .mobile-nav-container span {
+        padding-right: 2vw;
+    }
+}

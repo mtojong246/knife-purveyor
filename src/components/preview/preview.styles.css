@@ -23,3 +23,17 @@
     align-items: center;
     gap: 7vw;
 }
+
+@media screen and (max-width: 480px) {
+    .preview {
+        padding: 10vh 0;
+    }
+
+    .preview-container {
+        flex-direction: column;
+    }
+
+    .preview-title span {
+        font-size: 5.5vw;
+    }
+}

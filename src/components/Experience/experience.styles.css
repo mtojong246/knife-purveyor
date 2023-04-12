@@ -30,3 +30,26 @@
     text-align: left;
     width: 26vw;
 }
+
+@media screen and (max-width: 480px) {
+    .experience-container {
+        padding: 10vh 5vw;
+    }
+
+    .experience-title {
+        font-size: 5.5vw;
+    }
+
+    .experience-content {
+        flex-direction: column;
+    }
+
+    .experience-content p {
+        font-size: 4.5vw;
+        width: 90%;
+    }
+
+    .experience-content img {
+        height: 28vh;
+    }
+}

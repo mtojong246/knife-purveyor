@@ -24,3 +24,10 @@
         transform: rotate(360deg);
     }
     } 
+
+    @media screen and (max-width: 480px) {
+        .button-loader {
+            width: 5vw;
+            height: 5vw
+        }
+    }

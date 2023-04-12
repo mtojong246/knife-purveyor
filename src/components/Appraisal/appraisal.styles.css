@@ -20,3 +20,23 @@
 .appraisal-text p:last-child {
     font-weight: bold;
 }
+
+@media screen and (max-width: 480px) {
+    .appraisal-container {
+        margin: 10vh 10vw 5vh 10vw;
+    }
+
+    .appraisal-container span {
+        font-size: 5.5vw;
+        padding-bottom: 10vw;
+    } 
+    
+    .appraisal-text {
+        text-align: left;
+        font-size: 4vw;
+    }
+
+    .appraisal-text p {
+        margin-bottom: 10vw;
+    }
+}

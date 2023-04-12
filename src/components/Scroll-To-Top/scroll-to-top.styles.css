@@ -17,3 +17,16 @@
     opacity: 1;
     cursor: pointer;
 }
+
+@media screen and (max-width: 480px) {
+
+    .scroll-container {
+        bottom: 20vw;
+        right: 20vw;
+    }
+
+    .scroll-to-top {
+        height: 15vw;
+        width: 15vw;
+    }
+}

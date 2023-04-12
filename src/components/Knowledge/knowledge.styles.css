@@ -31,3 +31,26 @@
     text-align: left;
     width: 26vw;
 }
+
+@media screen and (max-width: 480px) {
+    .knowledge-container {
+        padding: 10vh 5vw;
+    }
+
+    .knowledge-title {
+        font-size: 5.5vw;
+    }
+
+    .knowledge-content {
+        flex-direction: column;
+    }
+
+    .knowledge-text {
+        font-size: 4.5vw;
+        width: 90%;
+    }
+
+    .knowledge-content img {
+        height: 28vh;
+    }
+}

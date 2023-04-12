@@ -24,3 +24,21 @@ hr {
     background-color: #7D7D7D;
     border: none;
 }
+
+@media screen and (max-width: 480px) {
+    .newsletter {
+        padding: 10vh 0;
+    }
+
+    .newsletter-container {
+        flex-direction: column;
+    }
+
+    .newsletter-title {
+        font-size: 5.5vw;
+    }
+
+    hr {
+        margin-bottom: 5vh;
+    }
+}

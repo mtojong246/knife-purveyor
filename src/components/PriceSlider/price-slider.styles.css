@@ -86,3 +86,28 @@ input[type="range"] {
   background-color: #25daa5;
 }
 
+
+@media screen and (max-width: 480px) {
+  input[type="number"] {
+    font-size: 4vw;
+  }
+
+  input[type="number"]:last-child {
+    width: 12vw;
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 3vw;
+    height: 3vw;
+  }
+  
+  input[type=range]::-moz-range-thumb {
+    width: 3vw;
+    height: 3vw;
+  }
+
+  .sliders_control {
+    margin-bottom: 3vh;
+  }
+}

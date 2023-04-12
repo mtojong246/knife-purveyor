@@ -10,14 +10,17 @@ import { Link, animateScroll as scroll } from 'react-scroll'
 
 import CartDropdown from '../../components/Cart-Dropdown/cart-dropdown.component';
 import ShopDropdown from '../../components/Shop-Dropdown/shop-dropdown.component';
+import SignInDropdown from '../../components/SignInDropdown/signin-dropdown.component';
 import Footer from '../../components/Footer/footer.component';
 import CartIcon from '../../components/Cart-Icon/cart-icon.component';
 import SearchBar from '../SearchBar/search-bar.component';
 import ScrollToTop from '../../components/Scroll-To-Top/scroll-to-top.component';
+import MobileNav from '../../components/MobileNav/mobile-nav.component';
 
 
 const Navigation = () => {
     const [isSearchOpen, setIsSearchOpen] = useState(false);
+    const [ isSignInOpen, setIsSignInOpen ] = useState(false);
     const { isCartOpen, isShopOpen, setIsShopOpen } = useContext(CartContext);
 
     const navigate = useNavigate();
@@ -30,13 +33,17 @@ const Navigation = () => {
         navigate('./contact');
     }
 
-    const goToSignIn = () => {
-        navigate('./sign-in')
-    }
-
     const toggleIsShopOpen = () => setIsShopOpen(!isShopOpen);
     const toggleIsSearchOpen = () => setIsSearchOpen(!isSearchOpen);
+    const toggleIsSignInOpen = () => setIsSignInOpen(!isSignInOpen);
 
+    const signInHandler = () => {
+        if (window.innerWidth <= 480) {
+            navigate('./sign-in')
+        } else {
+            toggleIsSignInOpen()
+        }
+    }
 
     return (
         <Fragment>
@@ -58,7 +65,10 @@ const Navigation = () => {
                         <span onClick={toggleIsSearchOpen}><FontAwesomeIcon className='search' icon={faMagnifyingGlass}/></span>
                         {isSearchOpen && <SearchBar />}
                     </div>
-                    <span onClick={goToSignIn}><FontAwesomeIcon icon={faUser}/></span>
+                    <div className='sign-in-trigger'>
+                        <span onClick={signInHandler}><FontAwesomeIcon icon={faUser}/></span>
+                        {isSignInOpen && <SignInDropdown />}
+                    </div>
                     <div className='cart-dropdown-trigger'>
                         <CartIcon/>
                         {isCartOpen && <CartDropdown />}
@@ -66,6 +76,7 @@ const Navigation = () => {
                 </div>   
             </div>
             <ScrollToTop />
+            <MobileNav />
             <Outlet />
             <Footer />
         </Fragment>

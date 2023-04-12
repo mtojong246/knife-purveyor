@@ -15,3 +15,12 @@
 .cart-icon-container:hover {
     cursor: pointer;
 }
+
+@media screen and (max-width: 480px) {
+    .cart-icon-container span {
+        font-size: 3vw;
+        padding: 0 0.8vw;
+        top: 5.5vw;
+        right: 3vw;
+    }
+}

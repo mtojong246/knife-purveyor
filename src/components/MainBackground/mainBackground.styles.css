@@ -1,7 +1,7 @@
 .main-container {
     height: 100vh;
     background-image: url('https://images.unsplash.com/photo-1588597575483-f4e43e191c94?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8a25pZmV8ZW58MHx8MHx8&w=1000&q=80');
-    background-size: cover;
+    background-size: 100% 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,5 +17,25 @@
 .main-caption {
     color: #ffffff;
     font-size: 1.5vw;
+}
 
+@media screen and (max-width: 768px) {
+    .main-container {
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-container {
+        height: 25vh;
+        text-align: center
+    }
+
+    .main-title {
+        font-size: 7vw;
+    }
+
+    .main-caption {
+        font-size: 3.5vw;
+    }
 }

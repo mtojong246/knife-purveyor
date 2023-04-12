@@ -13,3 +13,16 @@
     font-size: 1vw;
     border-radius: 2px;
 }
+
+@media screen and (max-width: 480px) {
+    .search-bar-container {
+        top: 6.5vw;
+        right: 30vw;
+    }
+
+    .search-bar-container input {
+        font-size: 3vw;
+        padding: 1vw;
+        width: 27vw;
+    }
+}

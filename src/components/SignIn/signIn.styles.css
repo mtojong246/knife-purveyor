@@ -57,3 +57,41 @@
     color: white;
     cursor: pointer;
 }
+
+@media screen and (max-width: 480px) {
+    .signin {
+        margin: 5vh 0;
+    }
+    
+    .signin-container {
+        width: 70%;
+    }
+    
+    .signin-container span {
+        font-size: 5.5vw;
+        text-align: left;
+    }
+    
+    .signin-container form {
+        margin: 5vw 0;
+    }
+    
+    
+    .signin-container button {
+        padding: 2vw 4vw;
+        font-size: 4vw; 
+    }
+    
+    .signin-container p {
+        font-size: 3vw;
+    }
+    
+    .signin-form input {
+        margin: 5vw 0;
+        font-size: 4vw;
+    }
+    
+    .signin-button-container {
+        margin-bottom: 10vw;
+    }
+}

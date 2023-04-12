@@ -45,3 +45,29 @@
     color: white;
     cursor: pointer;
 }
+
+@media screen and (max-width: 480px) {
+    .shop-card-container {
+        width: 75vw;
+        padding-bottom: 6vw;
+    }
+
+    .shop-card-description {
+        padding: 6vw 8vw;
+        height: 30vh;
+    }
+
+    .shop-card-description span {
+        font-size: 5.5vw;
+    }
+
+    .shop-card-description p {
+        font-size: 4vw;
+ 
+    }
+
+    .shop-card-container button {
+        font-size: 5vw;
+        padding: 5vw 6vw;
+    }
+}

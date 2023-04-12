@@ -1,5 +1,5 @@
 .checkout-container { 
-    width: 55%; 
+    width: 80%; 
     min-height: 90vh; 
     display: flex; 
     flex-direction: column; 
@@ -62,4 +62,19 @@
     cursor: pointer;
     background-color: #6e5b8b;
     color: white;
+}
+
+@media screen and (max-width: 480px) {
+    .checkout-header {
+        display: none;
+    }
+    
+    .checkout-title {
+        margin-bottom: 5vw;
+    }
+
+    .return-button button {
+        font-size: 4vw;
+        padding: 3vw 5vw;
+    }
 }

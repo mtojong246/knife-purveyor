@@ -20,3 +20,20 @@
 .payment-form-container h2 {
     font-size: 1vw;
 }
+
+@media screen and (max-width: 480px) {
+    .payment-form-container button {
+        font-size: 4vw;
+        width: 24vw;
+        height: 12vw;
+    }
+    
+    .payment-form-container form {
+        height: 10vh;
+        min-width: 70vw;
+    }
+    
+    .payment-form-container h2 {
+        font-size: 5vw;
+    } 
+}

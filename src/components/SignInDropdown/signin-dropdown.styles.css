@@ -1,0 +1,24 @@
+.sign-in-dropdown-container {
+    position: absolute;
+    top: 5.2vw;
+    right: 0;
+    background-color: #282828;
+    padding: 1vw;
+    box-shadow: inset 0 5px 5px 0 black;
+    z-index: 2;
+    text-align: center;
+}
+
+.sign-in-dropdown-container button {
+    font-size: 1vw;
+    padding: 1vw 3vw;
+    color: white;
+    background-color: black; 
+    border: 1px solid white; 
+}
+
+.sign-in-dropdown-container button:hover {
+    color: black; 
+    background-color: white;
+    cursor: pointer;
+}

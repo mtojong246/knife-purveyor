@@ -1,0 +1,19 @@
+.mobile-side-bar-container {
+    position: absolute;
+    width: 30vw;
+    padding: 5vw 3vw;
+    right: 0;
+    background-color: black;
+    color: white;
+}
+
+.mobile-side-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    font-size: 3vw;
+}
+
+.mobile-caret {
+    padding-left: 1vw;
+}

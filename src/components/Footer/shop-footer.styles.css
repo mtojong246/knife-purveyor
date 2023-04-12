@@ -16,3 +16,14 @@
     color: white;
     text-decoration: none;
 }
+
+@media screen and (max-width: 480px) {
+    .shop-footer-container span{
+        font-size: 5.5vw;
+    }
+
+    .shop-links {
+        margin-top: 5vw;
+        font-size: 4vw;
+    }
+}

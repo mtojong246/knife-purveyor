@@ -20,3 +20,17 @@
     color: #545454;
     margin: 4vh 0;
 }
+
+@media screen and (max-width: 480px) {
+    .about-container {
+        padding-bottom: 10vh;
+    }
+
+    .about-title {
+        font-size: 5.5vw;
+    }
+
+    .about-text p {
+        font-size: 4.5vw;
+    }
+}

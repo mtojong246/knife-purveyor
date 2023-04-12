@@ -44,3 +44,34 @@
     color: white;
     cursor: pointer;
 }
+
+@media screen and (max-width: 480px) {
+    .newsletter-card-container {
+        width: 75vw;
+        padding-bottom: 6vw;
+    }
+
+    .newsletter-title-container {
+        height: 40vw;
+    }
+
+    .newsletter-card-text {
+        padding: 6vw 8vw;
+        height: 70vh;
+    }
+
+    .newsletter-card-text span {
+        font-size: 5.5vw;
+    }
+
+    .newsletter-card-text p {
+        font-size: 4.5vw;
+        height: 20vh;
+ 
+    }
+
+    .read-more {
+        font-size: 5vw;
+        padding: 5vw 6vw;
+    }
+}

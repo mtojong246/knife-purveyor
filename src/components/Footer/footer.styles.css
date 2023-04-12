@@ -7,3 +7,11 @@
     background-color: #282828;
     color: #ffffff;
 }
+
+@media screen and (max-width: 480px) {
+    .footer-container {
+        flex-direction: column;
+        padding: 5vh 5vw;
+        gap: 10vh;
+    }
+}

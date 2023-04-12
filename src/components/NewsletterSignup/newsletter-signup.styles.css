@@ -64,5 +64,33 @@
 }
 
 
+@media screen and (max-width: 480px) {
+    .newsletter-signup {
+        width: 100%;
+    }
 
+    .newsletter-signup span {
+        font-size: 5.5vw;
+    }
 
+    .newsletter-signup-form input {
+        font-size: 4.5vw;
+        margin-top: 4vw;
+    }
+
+    .newsletter-signup button {
+        font-size: 4.5vw;
+        padding: 3vw 0;
+    }
+
+    .brand-icons {
+        padding-top: 4vw;
+        gap: 3vw;
+    }
+
+    .facebook, .instagram, .youtube {
+        height: 10vw;
+        width: 10vw;
+    }
+    
+}

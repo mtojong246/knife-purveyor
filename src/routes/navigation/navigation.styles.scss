@@ -51,3 +51,22 @@
     cursor: pointer;
 }
 
+
+@media screen and (max-width: 480px) {
+    .navigation-container {
+        padding: 5vw;
+    }
+    .navigation-links {
+        display: none;
+    }
+
+    .navigation-logo img {
+        height: 10vw;
+        width: 30vw;
+    } 
+
+    .navigation-icons {
+        gap: 3vw;
+        font-size: 5vw;
+    }
+}

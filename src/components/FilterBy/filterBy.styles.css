@@ -29,3 +29,22 @@
     border: 2px solid black;
     font-family: 'Montserrat', sans-serif;
 }
+
+@media screen and (max-width: 480px) {
+    .filter-by-container {
+        margin-bottom: 3vh;
+    }
+
+    .filter-by-container span {
+        font-size: 5.5vw;
+    }
+    
+    .filter-by-container hr {
+        margin-bottom: 5vw;
+    }
+    
+    .filter-by-dropdown select {
+        font-size: 4vw;
+        padding: 3vw 0 3vw 2.5vw;
+    }
+}
