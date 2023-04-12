@@ -1,8 +1,8 @@
 .mobile-shop-container {
     position: absolute;
-    width: 30vw;
+    width: 40vw;
     padding: 5vw 3vw;
-    right: 36vw;
+    right: 46vw;
     background-color: black;
     color: white;
 }
@@ -10,6 +10,6 @@
 .mobile-shop {
     display: flex;
     flex-direction: column;
-    gap: 3vw;
-    font-size: 3vw;
+    gap: 5vw;
+    font-size: 4vw;
 }
