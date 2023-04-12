@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 import { CartContext } from '../../context/cart.context';
 import CheckoutItem from '../Checkout-Item/checkout-item.component';
+import PaymentForm from '../Payment-Form/payment-form.component';
 
 
 const Checkout = () => {
@@ -33,6 +34,7 @@ const Checkout = () => {
                     <CheckoutItem key={cartItem.id} cartItem={cartItem} />
                 ))}
                 <span className='total'>Total: ${cartTotal}</span>
+                <PaymentForm />
             </div>
             <div to='/shop' className='return-button'>
                 <Link to='/shop'><button type='button'>Return to Shop</button></Link>

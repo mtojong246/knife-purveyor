@@ -14,7 +14,7 @@ const onLoad = marker => {
 const Map = () => {
 
     const { isLoaded } = useLoadScript({
-        googleMapsApiKey: 'AIzaSyB1COhDrkOUQzSm_BOfap0sFdSznXyR91Y'
+        googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAP_API_KEY
     })
 
     if(!isLoaded) {
@@ -31,7 +31,3 @@ const Map = () => {
 export default Map;
 
 
-
-//AIzaSyDrBZ9xW7plD65dpJ1QC8bkzUNnVDTaTc0
-
-//35.96639491120095, -78.52467373274929

@@ -1,0 +1,22 @@
+.payment-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.payment-form-container button {
+    font-size: 1vw;
+    width: 12vw;
+    height: 3vw;
+}
+
+.payment-form-container form {
+    height: 10vh;
+    min-width: 30vw;
+}
+
+.payment-form-container h2 {
+    font-size: 1vw;
+}
