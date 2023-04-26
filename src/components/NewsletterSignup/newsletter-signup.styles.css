@@ -76,6 +76,7 @@
     .newsletter-signup-form input {
         font-size: 4.5vw;
         margin-top: 4vw;
+        width: 90vw;
     }
 
     .newsletter-signup button {
