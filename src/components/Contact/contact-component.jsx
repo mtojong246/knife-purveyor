@@ -25,7 +25,7 @@ const Contact = () => {
             <div className='map-container'>
                 <Map />
                 <div className='contact-info'>
-                    <div><FontAwesomeIcon className='contact-icon' icon={faLocationDot} /><p>100 Siena Office Park Rd, Wake Forest, NC, 27587</p></div>
+                    <div className='address'><FontAwesomeIcon className='contact-icon' icon={faLocationDot} /><p>100 Siena Office Park Rd, Wake Forest, NC, 27587</p></div>
                     <div><FontAwesomeIcon className='contact-icon' icon={faPhone} /><p>919-295-1283</p></div>
                     <div><FontAwesomeIcon className='contact-icon' icon={faEnvelope} /><p>info@knifepurveyor.com</p></div>
                 </div>
