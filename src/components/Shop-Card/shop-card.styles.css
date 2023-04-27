@@ -24,6 +24,11 @@
 .shop-card-title {
     padding: 0 1vw;
     margin-top: 1vw;
+    max-height: 9vh;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 .shop-card-description p {
@@ -69,5 +74,13 @@
     .shop-card-container button {
         font-size: 5vw;
         padding: 5vw 6vw;
+    }
+
+    .shop-card-title {
+        max-height: 20vh;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
     }
 }

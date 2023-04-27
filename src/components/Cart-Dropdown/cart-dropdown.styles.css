@@ -8,19 +8,23 @@
     z-index: 2;
 }
 
-.cart-dropdown-content {
-    max-height: 20vw;
-    width: 15vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.cart-dropdown-content-container {
+    max-height: 25vw;
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
 
-.cart-dropdown-content::-webkit-scrollbar {
+.cart-dropdown-content {
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cart-dropdown-content-container::-webkit-scrollbar {
     display: none;
 }
 
