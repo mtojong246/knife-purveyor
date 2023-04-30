@@ -21,6 +21,17 @@
     font-size: 1vw;
 }
 
+.test-card-container {
+    text-align: center;
+    font-size: 1vw;
+    margin-bottom: 5vh;
+}
+
+.test-card-container span {
+    font-weight: bold;
+}
+
+
 @media screen and (max-width: 480px) {
     .payment-form-container button {
         font-size: 4vw;
@@ -36,4 +47,10 @@
     .payment-form-container h2 {
         font-size: 5vw;
     } 
+
+    .test-card-container {
+        text-align: center;
+        font-size: 5vw;
+        padding: 0 8vw;
+    }
 }

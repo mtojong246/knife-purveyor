@@ -53,6 +53,7 @@ const PaymentForm = () => {
     }
 
     return (
+        <>
         <div className='payment-form-container'>
             <form onSubmit={paymentHandler}>
                 <h2>Credit Card Payment: </h2>
@@ -60,6 +61,14 @@ const PaymentForm = () => {
                 <button disabled={isProcessing}>{isProcessing ? <SpinnerButton /> : 'Pay Now'}</button>
             </form>
         </div>
+        <div className='test-card-container'>
+            <span>Test Card</span>
+            <p><span>Card Number:</span> 4242 4242 4242 4242</p>
+            <p><span>Exp Date:</span> 04/24</p>
+            <p><span>CVC:</span> 242</p>
+            <p><span>Zip:</span> 42424</p>
+        </div>
+        </>
     )
 }
 

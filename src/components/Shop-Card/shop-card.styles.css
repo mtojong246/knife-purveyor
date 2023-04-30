@@ -77,10 +77,6 @@
     }
 
     .shop-card-title {
-        max-height: 20vh;
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 6;
-        -webkit-box-orient: vertical;
+        max-height: none;
     }
 }
