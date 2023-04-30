@@ -6,7 +6,7 @@ import { UserContext } from "../../context/user.context";
 import SpinnerButton from "../SpinnerButton/spinner-button.component";
 
 const PaymentForm = () => {
-    const { cartTotal } = useContext(CartContext);
+    const { cartTotal, clearAllItems } = useContext(CartContext);
     const { currentUser } = useContext(UserContext);
     const [ isProcessing, setIsProcessing ] = useState(false);
 
@@ -48,6 +48,7 @@ const PaymentForm = () => {
         } else {
             if (paymentResult.paymentIntent.status === 'succeeded') {
                 alert('Payment successful!')
+                clearAllItems();
             }
         }
     }
