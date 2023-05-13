@@ -86,6 +86,12 @@
     }
 }
 
+@media screen and (max-width: 480px) {
+    .contact-container {
+        padding: 0 2rem;
+    }
+}
+
 .address  {
     width: 70vw;
     display: flex;

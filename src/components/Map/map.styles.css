@@ -16,13 +16,6 @@
     width: 100%;
 }
 
-@media screen and (max-width: 480px) {
-    #map {
-        height: 60vw;
-        width: 70vw;
-    }
-    
-}
 
 
 

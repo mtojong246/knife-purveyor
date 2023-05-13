@@ -1,5 +1,5 @@
 .mobile-shop-container {
-    position: absolute;
+    position: fixed;
     width: 15rem;
     padding: 2rem;
     right: 15rem;
