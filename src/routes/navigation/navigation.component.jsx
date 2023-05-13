@@ -38,7 +38,7 @@ const Navigation = () => {
     const toggleIsSignInOpen = () => setIsSignInOpen(!isSignInOpen);
 
     const signInHandler = () => {
-        if (window.innerWidth <= 480) {
+        if (window.innerWidth <= 780) {
             navigate('./sign-in')
         } else {
             toggleIsSignInOpen()

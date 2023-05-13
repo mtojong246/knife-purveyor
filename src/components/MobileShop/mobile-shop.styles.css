@@ -1,15 +1,23 @@
 .mobile-shop-container {
     position: absolute;
-    width: 40vw;
-    padding: 5vw 3vw;
-    right: 46vw;
+    width: 15rem;
+    padding: 2rem;
+    right: 15rem;
     background-color: black;
     color: white;
+    top: 8.8rem;
 }
 
 .mobile-shop {
     display: flex;
     flex-direction: column;
-    gap: 5vw;
-    font-size: 4vw;
+    gap: 3rem;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 480px) {
+    .mobile-shop-container {
+        width: 12rem;
+        right: 10rem;
+    }
 }

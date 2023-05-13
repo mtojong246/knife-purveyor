@@ -3,7 +3,7 @@ import './experience.styles.css';
 const Experience = () => {
     return (
         <div className='experience-container'>
-            <span className='experience-title'>A Seamless, Rewarding Knife Experience</span>
+            <div className='experience-title-container'><span className='experience-title'>A Seamless, Rewarding Knife Experience</span></div>
             <hr />
             <div className='experience-content'>
                 <p>With a catalog that features so many unique pieces and artists, finding one that’s “just right” can often feel overwhelming — for both discerning collectors and newcomers alike.

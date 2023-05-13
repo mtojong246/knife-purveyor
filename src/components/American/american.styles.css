@@ -1,16 +1,20 @@
 .american-container {
     text-align: center;
     background-color: #D9D9D9;
-    padding: 5vw 0;
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .american-container hr {
-    width: 5vw;
+    width: 5rem;
     border: none;
 }
 
 .american-title {
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     color: #545454;
 }
 
@@ -18,39 +22,61 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 6vw;
+    gap: 5rem;
 }
 
 .american-content img {
-    height: 30vw;
+    height: 20rem;
 }
 
 .american-content p {
-    font-size: 1vw;
+    font-size: 1rem;
     color: #545454;
     text-align: left;
-    width: 26vw;
+    width: 20rem;
 }
 
-@media screen and (max-width: 480px) {
-    .american-container {
-        padding: 10vh 5vw;
+@media screen and (max-width: 1000px) {
+    .american-content {
+        gap: 3rem;
     }
 
-    .american-title {
-        font-size: 5.5vw;
+    .american-content img {
+        height: 18rem;
     }
+    
+    .american-content p {
+        font-size: 1rem;
+        color: #545454;
+        text-align: left;
+        width: 18rem;
+    }
+}
 
+@media screen and (max-width: 780px) {
     .american-content {
         flex-direction: column;
     }
 
+    .american-title-container {
+        width: 25rem;
+    }
+
     .american-content p {
-        font-size: 4.5vw;
-        width: 90%;
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .american-title-container {
+        width: 20rem;
+    }
+
+    .american-content p {
+        width: 20rem;
     }
 
     .american-content img {
-        height: 28vh;
+        height: 15rem;
     }
 }

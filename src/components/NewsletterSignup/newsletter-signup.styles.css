@@ -1,14 +1,15 @@
 .newsletter-signup {
-    display: grid;
-    grid-template-rows: 1fr 3fr 1fr 1fr;
-    justify-items: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: flex-start;
-    width: 45vw;
+    gap: 1rem;
+    width: 40%;
+    text-align: left;
 }
 
 .newsletter-signup span {
-    align-self: center;
-    font-size: 1.8vw;
+    font-size: 1.5rem;
     margin-bottom: 0px;
 }
 
@@ -21,8 +22,8 @@
 .newsletter-signup-form input {
     display: block;
     width: 100%;
-    margin-top: 2vw;
-    font-size: 1vw;
+    margin-top: 2rem;
+    font-size: 1rem;
     border: none;
     border-bottom: 1px solid white;
     background-color: #282828;
@@ -31,12 +32,12 @@
 
 .newsletter-signup button {
     width: 100%;
-    font-size: 1vw;
+    font-size: 1rem;
     background-color: #282828;
     color: white; 
     border: 2px solid white; 
     margin-top: 0.5vw;
-    padding: 1vw 0;
+    padding: 1rem 0;
 }
 
 .newsletter-signup button:hover {
@@ -46,17 +47,16 @@
 }
 
 .brand-icons {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: left;
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
-    padding-top: 1vw;
-    gap: 1vw;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .facebook, .instagram, .youtube {
-    height: 2.5vw;
-    width: 2.5vw;
+    height: 2.5rem;
+    width: 2.5rem;
 }
 
 .facebook:hover, .instagram:hover, .youtube:hover {
@@ -64,34 +64,9 @@
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 780px) {
     .newsletter-signup {
-        width: 90vw;
-    }
-
-    .newsletter-signup span {
-        font-size: 5.5vw;
-    }
-
-    .newsletter-signup-form input {
-        font-size: 4.5vw;
-        margin-top: 4vw;
-        width: 90vw;
-    }
-
-    .newsletter-signup button {
-        font-size: 4.5vw;
-        padding: 3vw 0;
-    }
-
-    .brand-icons {
-        padding-top: 4vw;
-        gap: 3vw;
-    }
-
-    .facebook, .instagram, .youtube {
-        height: 10vw;
-        width: 10vw;
+        width: 100%;
     }
     
 }

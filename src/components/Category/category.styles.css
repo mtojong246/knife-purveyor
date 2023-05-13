@@ -2,8 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 5vw;
-    gap: 5vw;
+    padding: 5rem 3vw;
+    margin-top: 5rem;
+    gap: 3vw;
 }
 
 .category-cards-container {
@@ -12,7 +13,7 @@
 }
 
 .category-title {
-    font-size: 2vw;
+    font-size: 2rem;
 }
 
 .category-cards {
@@ -22,14 +23,14 @@
     justify-items: center;
     align-items: center;
     margin-top: 3vw;
-    gap: 3vw;
+    gap: 2vw;
 }
 
 .category-sort-container {
     display: flex;
     flex-direction: column;
-    gap: 3vw;
-    width: 20vw;
+    gap: 3rem;
+    width: 15rem;
 }
 
 .category-filter-by-price-container {
@@ -41,7 +42,7 @@
 
 .category-filter-by-price-container span {
     align-self: flex-end;
-    font-size: 1vw;
+    font-size: 1.5rem;
 }
 
 .category-filter-by-price-container hr {
@@ -53,19 +54,29 @@
     margin-left: 5px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1000px) {
+    .category-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(autofill, 1fr);
+        justify-items: center;
+        align-items: center;
+        margin-top: 3vw;
+        gap: 3vw;
+    }
+}
+
+@media screen and (max-width: 780px) {
     .category-container {
         flex-direction: column;
-        margin-top: 5vh;
+        margin-top: 8rem;
+        justify-content: center;
+        align-items: center;
         gap: 5vh;
     }
 
     .category-cards-container {
         width: 90vw;
-    }
-
-    .category-cards-container span {
-        font-size: 5.5vw;
     }
 
     .category-cards {
@@ -77,18 +88,27 @@
         gap: 10vw;
     }
 
-    .category-sort-container {
-        display: flex;
-        flex-direction: column;
-        gap: 10vw;
-        width: 90vw;
-    }
-
+    
     .category-filter-by-price-container hr {
         margin-bottom: 5vw;
     }
 
-    .category-filter-by-price-container span {
-        font-size: 5.5vw;
+    .category-sort-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10vw;
+        width: 25rem;
     }
+}
+
+@media screen and (max-width: 480px) {
+    
+
+    .category-sort-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10vw;
+        width: 20rem;
+    }
+
 }

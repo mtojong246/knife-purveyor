@@ -1,15 +1,19 @@
 .customer-service {
-    align-self: flex-start;
+    width: 30%;
 }
 
 .customer-service span {
-    font-size: 2vw;
+    font-size: 1.5rem;
 }
 
 .customer-links {
-    margin-top: 2vw;
-    margin-bottom: 4vw;
-    font-size: 0.8vw;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.customer-links p {
+    margin-top: 1rem;
 }
 
 .customer-links p:hover {
@@ -18,11 +22,11 @@
 }
 
 .hours {
-    margin-top: 2vw;
+    margin-top: 2rem;
 }
 
 .hours p {
-    font-size: 0.8vw;
+    font-size: 1rem;
 }
 
 .customer-link:active, .customer-link:link, .customer-link:visited {
@@ -30,22 +34,8 @@
     text-decoration: none;
 }
 
-@media screen and (max-width: 480px) {
-    .customer-service span {
-        font-size: 5.5vw;
-    }
-
-    .customer-links {
-        margin-top: 5vw;
-        margin-bottom: 10vh;
-        font-size: 4vw;
-    }
-
-    .hours {
-        margin-top: 5vw;
-    }
-    
-    .hours p {
-        font-size: 4vw;
+@media screen and (max-width: 780px) {
+    .customer-service {
+        width: 100%;
     }
 }

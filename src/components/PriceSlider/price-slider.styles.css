@@ -15,7 +15,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  font-size: 1vw;
+  font-size: 1rem;
   color: #635a5a;
   align-items: flex-start;
   gap: 1vw;
@@ -52,14 +52,14 @@ input[type=range]::-webkit-slider-thumb:active {
 }
 
 input[type="number"] {
-  font-size: 1vw;
+  font-size: 1rem;
   color: #635a5a;
   border: 1px solid #635a5a;
   border-radius: 10px;
 }
 
 input[type="number"]:last-child {
-  width: 3.7vw;
+  width: 3.5rem;
 }
 
 
@@ -89,13 +89,6 @@ input[type="range"] {
 
 
 @media screen and (max-width: 480px) {
-  input[type="number"] {
-    font-size: 4vw;
-  }
-
-  input[type="number"]:last-child {
-    width: 12vw;
-  }
 
   input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;

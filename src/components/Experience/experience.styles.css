@@ -1,15 +1,19 @@
 .experience-container {
     text-align: center;
-    padding: 5vw 0;
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .experience-container hr {
-    width: 5vw;
+    width: 5rem;
     border: none;
 }
 
 .experience-title {
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     color: #545454;
 }
 
@@ -17,39 +21,75 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 6vw;
+    gap: 4rem;
 }
 
 .experience-content img {
-    height: 30vw;
+    height: 20rem;
 }
 
 .experience-content p {
-    font-size: 1vw;
+    font-size: 1rem;
     color: #545454;
     text-align: left;
-    width: 26vw;
+    width: 20rem;
 }
 
-@media screen and (max-width: 480px) {
-    .experience-container {
-        padding: 10vh 5vw;
+@media screen and (max-width: 1000px){
+    .experience-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
     }
+    
+    .experience-content img {
+        height: 18rem;
+    }
+    
+    .experience-content p {
+        font-size: 1rem;
+        color: #545454;
+        text-align: left;
+        width: 18rem;
+    }
+}
 
-    .experience-title {
-        font-size: 5.5vw;
+@media screen and (max-width: 780px) {
+    .experience-title-container {
+        width: 25rem;
     }
 
     .experience-content {
         flex-direction: column;
-    }
-
-    .experience-content p {
-        font-size: 4.5vw;
-        width: 90%;
+        gap: 3rem;
     }
 
     .experience-content img {
-        height: 28vh;
+        height: 17rem;
+    }
+    
+    .experience-content p {
+        font-size: 1rem;
+        color: #545454;
+        text-align: left;
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .experience-title-container {
+        width: 20rem;
+    }
+
+    .experience-content img {
+        height: 14rem;
+    }
+    
+    .experience-content p {
+        font-size: 1rem;
+        color: #545454;
+        text-align: left;
+        width: 20rem;
     }
 }

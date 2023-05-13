@@ -2,8 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 5vw;
-    gap: 5vw;
+    padding: 5rem 3vw;
+    margin-top: 5rem;
+    gap: 3vw;
 }
 
 .shop-cards-container {
@@ -12,7 +13,7 @@
 }
 
 .shop-cards-container span {
-    font-size: 2vw;
+    font-size: 2rem;
 }
 
 .shop-cards {
@@ -22,14 +23,14 @@
     justify-items: center;
     align-items: center;
     margin-top: 3vw;
-    gap: 3vw;
+    gap: 2vw;
 }
 
 .shop-sort-container {
-    width: 20vw;
+    width: 15rem;
     display: flex;
     flex-direction: column;
-    gap: 3vw;
+    gap: 3rem;
     
 }
 
@@ -42,7 +43,7 @@
 
 .filter {
     align-self: flex-end;
-    font-size: 1vw;
+    font-size: 1.5rem;
 }
 
 .filter-by-price-container hr {
@@ -53,20 +54,26 @@
     margin-bottom: 0px;
     margin-left: 5px;
 }
+@media screen and (max-width: 1000px) {
 
-@media screen and (max-width: 480px) {
+    .shop-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(autofill, 1fr);
+        justify-items: center;
+        align-items: center;
+        margin-top: 3vw;
+        gap: 3vw;
+    }
+}
+
+@media screen and (max-width: 780px) {
     .shop-container {
         flex-direction: column;
-        margin-top: 5vh;
+        margin-top: 8rem;
+        justify-content: center;
+        align-items: center;
         gap: 5vh;
-    }
-
-    .shop-cards-container {
-        width: 90vw;
-    }
-
-    .shop-cards-container span {
-        font-size: 5.5vw;
     }
 
     .shop-cards {
@@ -78,20 +85,34 @@
         gap: 10vw;
     }
 
+    .shop-cards-container {
+        width: 90vw;
+    }
+
+
+    
+
     .shop-sort-container {
         display: flex;
         flex-direction: column;
         gap: 10vw;
-        width: 90vw;
+        width: 25rem;
     }
 
     .filter-by-price-container hr {
         margin-bottom: 5vw;
     }
+}
 
-    .filter-by-price-container span {
-        font-size: 5.5vw;
+@media screen and (max-width: 480px) {
+    .shop-sort-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10vw;
+        width: 20rem;
     }
+
+    
 }
 
 

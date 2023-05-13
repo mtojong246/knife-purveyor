@@ -2,48 +2,50 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5vw 0;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    padding: 0 10rem;
 }
 
 .signin-container {
-    width: 40%;
+    width: 100%;
 }
 
 .signin-container span {
-    font-size: 2.5vw;
+    font-size: 2rem;
     text-align: left;
 }
 
 .signin-container form {
-    margin: 2vw 0;
+    margin: 2rem 0;
 }
 
 
 .signin-container button {
-    padding: 1vw 3vw;
-    font-size: 1vw; 
+    padding: 1rem 3rem;
+    font-size: 1rem; 
     background-color: #ebebeb;
     color: #545454; 
     border: none; 
 }
 
 .signin-container p {
-    font-size: 0.8vw;
+    font-size: 0.8rem;
 }
 
 .signin-form input {
     display: block;
-    margin: 2vw 0;
+    margin: 2rem 0;
     border: none;
     border-bottom: 1px solid black;
-    font-size: 1.5vw;
+    font-size: 1rem;
     width: 100%;
 }
 
 .signin-button-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2vw;
+    margin-bottom: 2rem;
 }
 
 .google-button:hover {
@@ -58,40 +60,23 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 780px) {
+    .signin {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15rem;
+        margin-bottom: 7rem;
+        padding: 0 5rem;
+    }
+
+    .signin-container button {
+        padding: 1rem;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .signin {
-        margin: 5vh 0;
-    }
-    
-    .signin-container {
-        width: 70%;
-    }
-    
-    .signin-container span {
-        font-size: 5.5vw;
-        text-align: left;
-    }
-    
-    .signin-container form {
-        margin: 5vw 0;
-    }
-    
-    
-    .signin-container button {
-        padding: 2vw 4vw;
-        font-size: 4vw; 
-    }
-    
-    .signin-container p {
-        font-size: 3vw;
-    }
-    
-    .signin-form input {
-        margin: 5vw 0;
-        font-size: 4vw;
-    }
-    
-    .signin-button-container {
-        margin-bottom: 10vw;
+        padding: 0 2rem;
     }
 }

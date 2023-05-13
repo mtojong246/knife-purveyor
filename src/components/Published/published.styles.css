@@ -1,15 +1,19 @@
 .published-container {
     text-align: center;
-    padding: 5vw 0 10vw 0;
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .published-container hr {
-    width: 5vw;
+    width: 5rem;
     border: none;
 }
 
 .published-title {
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     color: #545454;
 }
 
@@ -17,12 +21,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2vw;
+    gap: 1rem;
 }
 
 .mag-img {
-    height: 60vh;
-    width: 30vw;
+    height: 25rem;
+    width: 18rem;
 }
 
 .magazine-covers img {
@@ -31,20 +35,34 @@
 
 }
 
-@media screen and (max-width: 480px) {
-    .published-container {
-        padding-bottom: 10vh;
+@media screen and (max-width: 1000px) {
+    .mag-img {
+        height: 25rem;
+        width: 15rem;
     }
+}
 
-    .published-title {
-        font-size: 5.5vw;
-    }
 
+@media screen and (max-width: 780px) {
     .magazine-covers {
         flex-direction: column;
     }
 
     .mag-img {
-        width: 80vw;
+        width: 25rem;
+        height: 35rem;
     }
+}
+
+@media screen and (max-width: 480px) {
+    .published-container {
+        padding-bottom: 10vh;
+    }
+
+    .mag-img {
+        width: 20rem;
+        height: 30rem;
+    }
+
+    
 }

@@ -1,10 +1,19 @@
 .shop-footer-container span{
-    font-size: 2vw;
+    font-size: 1.5rem;
+}
+
+.shop-footer-container {
+    width: 10%;
 }
 
 .shop-links {
-    margin-top: 2vw;
-    font-size: 0.8vw;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+
+.shop-links p{
+    margin-top: 1rem;
 }
 
 .shop-links p:hover {
@@ -17,13 +26,8 @@
     text-decoration: none;
 }
 
-@media screen and (max-width: 480px) {
-    .shop-footer-container span{
-        font-size: 5.5vw;
-    }
-
-    .shop-links {
-        margin-top: 5vw;
-        font-size: 4vw;
+@media screen and (max-width: 780px) {
+    .shop-footer-container {
+        width: 100%;
     }
 }

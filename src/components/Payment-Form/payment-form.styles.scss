@@ -7,24 +7,28 @@
 }
 
 .payment-form-container button {
-    font-size: 1vw;
-    width: 12vw;
-    height: 3vw;
+    font-size: 1rem;
+    width: 12rem;
+    height: 3rem;
 }
 
 .payment-form-container form {
-    height: 10vh;
-    min-width: 30vw;
+    height: 10rem;
+    width: 30rem;
 }
 
 .payment-form-container h2 {
-    font-size: 1vw;
+    font-size: 1rem;
 }
 
 .test-card-container {
-    text-align: center;
-    font-size: 1vw;
-    margin-bottom: 5vh;
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 5rem;
+}
+
+.test-card-container div {
+    margin-bottom: 0.5rem;
 }
 
 .test-card-container span {
@@ -32,25 +36,8 @@
 }
 
 
-@media screen and (max-width: 480px) {
-    .payment-form-container button {
-        font-size: 4vw;
-        width: 24vw;
-        height: 12vw;
-    }
-    
-    .payment-form-container form {
-        height: 10vh;
-        min-width: 70vw;
-    }
-    
-    .payment-form-container h2 {
-        font-size: 5vw;
-    } 
-
-    .test-card-container {
-        text-align: center;
-        font-size: 5vw;
-        padding: 0 8vw;
+@media screen and (max-width: 780px) {
+    .payment-form-container form{
+        width: 300px;
     }
 }

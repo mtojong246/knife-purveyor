@@ -1,9 +1,9 @@
 .card-container {
-    width: 25vw;
+    width: 18rem;
     background-color: #ffffff;
     border-radius: 15px;
     box-shadow: 0 5px 5px grey;
-    padding-bottom: 2vw;
+    padding-bottom: 2rem;
 }
 
 
@@ -15,26 +15,27 @@
 
 .card-text {
     text-align: center;
-    padding: 2vw 4vw;
+    padding: 2rem;
+    height: 18rem;
 }
 
 .card-text span {
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     color: #545454;
 }
 
 .card-text p {
-    font-size: 1vw;
+    font-size: 1rem;
     color: #545454;
-    height: 16vh;
+    margin-top: 1rem;
 }
 
 .card-container button {
-    font-size: 1vw;
+    font-size: 1rem;
     color: #545454;
     background-color: #EBEBEB;
     border: none;
-    padding: 1vw 2vw;
+    padding: 1rem 2rem;
     border-radius: 10px;
 }
 
@@ -44,28 +45,30 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1000px) {
     .card-container {
-        width: 75vw;
-        padding-bottom: 6vw;
+        width: 15rem;
     }
 
     .card-text {
-        padding: 6vw 8vw;
+        height: 25rem;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .card-container {
+        width: 25rem;
     }
 
-    .card-text span {
-        font-size: 5.5vw;
+    .card-text {
+        height: 15rem;
     }
+}
 
-    .card-text p {
-        font-size: 4vw;
-        height: 20vh;
- 
-    }
 
-    .card-container button {
-        font-size: 5vw;
-        padding: 5vw 6vw;
+@media screen and (max-width: 480px) {
+    .card-container {
+        width: 20rem;
+        padding-bottom: 6vw;
     }
 }

@@ -1,15 +1,19 @@
 .knowledge-container {
     text-align: center;
-    padding: 5vw 0;
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .knowledge-container hr {
-    width: 5vw;
+    width: 5rem;
     border: none;
 }
 
 .knowledge-title {
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     color: #545454;
 }
 
@@ -18,39 +22,103 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 6vw;
+    gap: 5rem;
 }
 
 .knowledge-content img {
-    height: 30vw;
+    height: 20rem;
 }
 
 .knowledge-text {
-    font-size: 1vw;
+    font-size: 1rem;
     color: #545454;
     text-align: left;
-    width: 26vw;
+    width: 20rem;
 }
 
-@media screen and (max-width: 480px) {
-    .knowledge-container {
-        padding: 10vh 5vw;
-    }
+.knowledge-paragraph {
+    width: 54rem;
+    text-align: left;
+    margin-top: 3rem;
+    color: #545454;
+}
 
-    .knowledge-title {
-        font-size: 5.5vw;
+@media screen and (max-width: 1000px){
+    .knowledge-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
     }
+    
+    .knowledge-content img {
+        height: 18rem;
+    }
+    
+    .knowledge-text {
+        font-size: 1rem;
+        color: #545454;
+        text-align: left;
+        width: 18rem;
+    }
+    
+    .knowledge-paragraph {
+        width: 46rem;
+        text-align: left;
+        margin-top: 3rem;
+        color: #545454;
+    }
+}
 
+@media screen and (max-width: 780px) {
+
+    .knowledge-title-container {
+        width: 25rem;
+    }
     .knowledge-content {
         flex-direction: column;
-    }
-
-    .knowledge-text {
-        font-size: 4.5vw;
-        width: 90%;
+        gap: 3rem;
     }
 
     .knowledge-content img {
-        height: 28vh;
+        height: 18rem;
+    }
+    
+    .knowledge-text {
+        font-size: 1rem;
+        color: #545454;
+        text-align: left;
+        width: 25rem;
+    }
+    
+    .knowledge-paragraph {
+        width: 25rem;
+        text-align: left;
+        margin-top: 2rem;
+        color: #545454;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .knowledge-title-container {
+        width: 20rem;
+    }
+
+    .knowledge-content img {
+        height: 15rem;
+    }
+    
+    .knowledge-text {
+        font-size: 1rem;
+        color: #545454;
+        text-align: left;
+        width: 20rem;
+    }
+    
+    .knowledge-paragraph {
+        width: 20rem;
+        text-align: left;
+        margin-top: 2rem;
+        color: #545454;
     }
 }

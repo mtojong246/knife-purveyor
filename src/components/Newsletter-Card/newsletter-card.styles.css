@@ -1,42 +1,42 @@
 .newsletter-card-container {
-    width: 25vw;
+    width: 18rem;
     background-color: #ffffff;
     box-shadow: 0 5px 5px 1px grey;
     border-radius: 15px;
-    padding-bottom: 2vw;
+    padding-bottom: 2rem;
 }
 
 .newsletter-title-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vw;
+    height: 15rem;
 }
 
 .newsletter-card-text {
     text-align: center;
-    padding: 2vw 4vw;
-    height: 55vh;
-    margin-bottom: 3vh;
+    padding: 2rem;
+    height: 40rem;
+    margin-bottom: 2rem;
 }
 
 .newsletter-card-text span {
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     color: #545454;
 }
 
 .newsletter-card-text p {
-    font-size: 1vw;
+    font-size: 1rem;
     color: #545454;
     
 }
 
 .read-more {
-    font-size: 1vw;
+    font-size: 1rem;
     color: #545454;
     background-color: #EBEBEB;
     border: none;
-    padding: 1vw 2vw;
+    padding: 1rem 2rem;
     border-radius: 10px;
 }
 
@@ -46,33 +46,50 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1000px) {
     .newsletter-card-container {
-        width: 75vw;
-        padding-bottom: 6vw;
+        width: 15rem;
     }
 
     .newsletter-title-container {
-        height: 40vw;
+        height: 18rem;
     }
 
     .newsletter-card-text {
-        padding: 6vw 8vw;
-        height: 70vh;
+        height: 48rem;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .newsletter-card-container {
+        width: 25rem;
     }
 
-    .newsletter-card-text span {
-        font-size: 5.5vw;
+    .newsletter-title-container {
+        height: 10rem;
+        margin-bottom: 2rem;
     }
 
-    .newsletter-card-text p {
-        font-size: 4.5vw;
- 
+    .newsletter-card-text {
+        height: 28rem;
+        padding: 2rem 3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .newsletter-card-container {
+        width: 20rem;
     }
 
-    .read-more {
-        font-size: 5vw;
-        padding: 5vw 6vw;
-        margin-top: 20vw;
+    .newsletter-title-container {
+        height: 12rem;
+        margin-bottom: 2rem;
     }
+
+    .newsletter-card-text {
+        height: 40rem;
+        padding: 2rem 3rem;
+    }
+
+
 }

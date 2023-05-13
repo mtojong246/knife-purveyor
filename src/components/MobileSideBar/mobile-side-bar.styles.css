@@ -1,8 +1,9 @@
 .mobile-side-bar-container {
     position: absolute;
-    width: 40vw;
-    padding: 5vw 3vw;
+    width: 15rem;
+    padding: 2rem;
     right: 0;
+    top: 8.8rem;
     background-color: black;
     color: white;
 }
@@ -10,10 +11,16 @@
 .mobile-side-bar {
     display: flex;
     flex-direction: column;
-    gap: 5vw;
-    font-size: 4vw;
+    gap: 3rem;
+    font-size: 1.5rem;
 }
 
 .mobile-caret {
-    padding-left: 1vw;
+    padding-left: 3px;
+}
+
+@media screen and (max-width: 480px) {
+    .mobile-side-bar-container {
+        width: 10rem;
+    }
 }

@@ -1,10 +1,12 @@
 .checkout-item-container { 
     width: 100%; 
     display: flex; 
+    justify-content: flex-start;
+    align-items: center;
     min-height: 100px; 
     border-bottom: 1px solid darkgrey; 
-    padding: 15px 0; 
-    font-size: 16px; 
+    padding: 1rem 0; 
+    font-size: 1rem; 
     align-items: center; 
 }
     
@@ -22,9 +24,14 @@
 .checkout-item-container .name, .checkout-item-container .quantity, .checkout-item-container .price { 
         width: 23%; 
 } 
+
+.name {
+    padding-right: 1rem;
+}
+
     
 .quantity { 
-    display: flex; 
+    display: flex;
 }
         
 .arrow { 

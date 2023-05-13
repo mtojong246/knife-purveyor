@@ -3,11 +3,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 5vw 0;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    padding: 0 10rem;
 }
 
 .signup-container {
-    width: 60%;
+    width: 100%;
     text-align: center;
 }
 
@@ -15,19 +17,19 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 2vw;
+    gap: 2rem;
     justify-items: center;
     align-items: center;
-    margin-top: 2vw;
+    margin-top: 4rem;
 }
 
 .signup-container span {
-    font-size: 2.5vw;
+    font-size: 2rem;
 }
 
 .signup button {
-    padding: 1vw 3vw;
-    font-size: 1vw; 
+    padding: 1rem 3rem;
+    font-size: 1rem; 
     background-color: #ebebeb;
     color: #545454; 
     border: none; 
@@ -35,29 +37,31 @@
 
 .signup-container input {
     display: block;
-    margin-top: 2vw;
     border: none;
     border-bottom: 1px solid black;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     width: 100%;
 }
 
 
 .email-correspondence {
     display: inline-block;
-    padding-left: 0.8vw;
-    font-size: 0.8vw;
+    font-size: 0.8rem;
+}
+
+.email-correspondence input {
+    margin-right: 0.5rem;
 }
 
 .signup-newsletter span {
-    font-size: 0.8vw;
+    font-size: 0.8rem;
 }
 
 .signup-button-container {
     display: flex;
     justify-content: center;
-    gap: 2vw;
-    margin-top: 1vw;
+    gap: 2rem;
+    margin-top: 4rem;
 }
 
 .signup-button-container button:hover {
@@ -66,55 +70,35 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 780px) {
+    .signup {
+        margin-top: 15rem;
+        margin-bottom: 7rem;
+        padding: 0 5rem;
+    }
+
+    .signup button {
+        padding: 1rem;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .signup {
+        padding: 0 2rem;
+    }
+
+    .form {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 10vw 0;
-    }
-    
-    .signup-container {
-        width: 80%;
-        text-align: center;
-        margin-bottom: 5vw;
-    }
-    
-    .form {
-        gap: 5vw;
-        margin-top: 5vw;
-    }
-    
-    .signup-container span {
-        font-size: 5.5vw;
-    }
-    
-    .signup button {
-        padding: 2vw 4vw;
-        font-size: 4vw; 
-    }
-    
-    .signup-container input {
-        margin-top: 5vw;
-        font-size: 4vw;
-    }
-    
-    
-    .email-correspondence {
-        display: inline-block;
-        padding-left: 0.8vw;
-        font-size: 3vw;
-        margin-top: 5vw;
-        width: 70vw;
-    }
-    
-    .signup-newsletter span {
-        font-size: 4vw;
     }
 
-    .signup-newsletter {
-        width: 80%;
-        margin-bottom: 5vw;
+    .signup-button-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 2rem;
+        margin-top: 4rem;
     }
 }

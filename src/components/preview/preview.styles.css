@@ -1,15 +1,19 @@
 .preview {
     text-align: center;
-    padding: 5vw 0;
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .preview hr {
-    width: 5vw;
+    width: 5rem;
     border: none;
 }
 
 .preview-title span {
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     color: #545454;
 }
 
@@ -21,19 +25,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 7vw;
+    gap: 4vw;
 }
 
-@media screen and (max-width: 480px) {
-    .preview {
-        padding: 10vh 0;
-    }
-
+@media screen and (max-width: 780px) {
     .preview-container {
         flex-direction: column;
-    }
-
-    .preview-title span {
-        font-size: 5.5vw;
+        gap: 2rem;
     }
 }

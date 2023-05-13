@@ -7,7 +7,7 @@
 
 .filter-by-container span {
     align-self: flex-end;
-    font-size: 1vw;
+    font-size: 1.5rem;
 }
 
 .filter-by-container hr {
@@ -24,7 +24,7 @@
 
 .filter-by-dropdown select {
     width: 100%;
-    font-size: 1vw;
+    font-size: 1rem;
     padding: 1vw 0 1vw 0.5vw;
     border: 2px solid black;
     font-family: 'Montserrat', sans-serif;
@@ -33,18 +33,5 @@
 @media screen and (max-width: 480px) {
     .filter-by-container {
         margin-bottom: 3vh;
-    }
-
-    .filter-by-container span {
-        font-size: 5.5vw;
-    }
-    
-    .filter-by-container hr {
-        margin-bottom: 5vw;
-    }
-    
-    .filter-by-dropdown select {
-        font-size: 4vw;
-        padding: 3vw 0 3vw 2.5vw;
     }
 }

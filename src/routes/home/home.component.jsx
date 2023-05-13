@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-
+import './home.styles.scss';
 import Preview from '../../components/preview/preview.component';
 import About from '../../components/About/about.component';
 import Published from '../../components/Published/published.component';
@@ -16,7 +16,7 @@ const Home = () => {
     }, []);
 
     return (
-        <>
+        <div className='home-container'>
             <MainBackground />
             <Preview />
             <About />
@@ -25,7 +25,7 @@ const Home = () => {
             <Experience />
             <Knowledge />
             <Newsletter />
-        </>
+        </div>
         
     )
 }

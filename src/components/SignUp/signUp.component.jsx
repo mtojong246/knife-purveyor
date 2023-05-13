@@ -63,7 +63,7 @@ const SignUp = () => {
             <div className='signup-newsletter'>
                 <span>Sign up to our Newsletter</span>
                 <br />
-                <input type='checkbox' /><p className='email-correspondence'>I agree to receive email correspondence from Knifepurveyor.com</p> 
+                <p className='email-correspondence'><input type='checkbox' />I agree to receive email correspondence from Knifepurveyor.com</p> 
             </div>
             <div className='signup-button-container'>
                 <Link to='/sign-in'><button type='button'>Back</button></Link>

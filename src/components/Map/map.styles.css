@@ -1,6 +1,19 @@
 #map {
-    height: 20vw;
-    width: 30vw;
+    height: 20rem;
+    width: 100%;
+}
+
+#content {
+    text-align: left;
+}
+
+#content span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.map {
+    width: 100%;
 }
 
 @media screen and (max-width: 480px) {

@@ -63,7 +63,7 @@ const PaymentForm = () => {
             </form>
         </div>
         <div className='test-card-container'>
-            <span>Test Card</span>
+            <div><span>Test Card</span></div>
             <p><span>Card Number:</span> 4242 4242 4242 4242</p>
             <p><span>Exp Date:</span> 04/24</p>
             <p><span>CVC:</span> 242</p>

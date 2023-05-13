@@ -3,7 +3,7 @@ import './american.styles.css';
 const American = () => {
     return (
         <div className='american-container'>
-            <span className='american-title'>American Knives, Handcrafted by American Artists</span>
+            <div className='american-title-container'><span className='american-title'>American Knives, Handcrafted by American Artists</span></div>
             <hr/>
             <div className='american-content'>
                 <img src={'https://www.knifepurveyor.com/wp-content/uploads/2020/10/scott-lobaido-statue-of-liberty-old-glory-painting.jpg'} alt='statue-of-liberty' />

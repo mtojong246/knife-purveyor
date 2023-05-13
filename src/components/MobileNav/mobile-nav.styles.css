@@ -2,18 +2,22 @@
     display: none;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 780px) {
     .mobile-nav-container {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        padding: 3vw;
+        padding: 1rem;
         background-color: #282828;
         color: #FFFFFF;
-        font-size: 4vw;
+        font-size: 1.5rem;
+        position: fixed;
+        top: 5rem;
+        left: 0;
+        width: 100vw;
     }
 
     .mobile-nav-container span {
-        padding-right: 2vw;
+        padding-right: 0.75rem;
     }
 }

@@ -5,38 +5,36 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 10rem;
+    padding: 0 5rem;
 }
 
 .appraisal-container span {
-    font-size: 2.5vw;
+    font-size: 2rem;
     padding-bottom: 2vw;
 } 
 
 .appraisal-text {
     text-align: left;
-    font-size: 1vw;
+    font-size: 1rem;
+}
+
+.appraisal-text p {
+    margin: 2rem 0;
 }
 
 .appraisal-text p:last-child {
     font-weight: bold;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 750px) {
     .appraisal-container {
-        margin: 10vh 10vw 5vh 10vw;
+        margin-top: 15rem;
     }
+}
 
-    .appraisal-container span {
-        font-size: 5.5vw;
-        padding-bottom: 10vw;
-    } 
-    
-    .appraisal-text {
-        text-align: left;
-        font-size: 4vw;
-    }
-
-    .appraisal-text p {
-        margin-bottom: 10vw;
+@media screen and (max-width: 750px) {
+    .appraisal-container {
+        padding: 0 3rem;
     }
 }

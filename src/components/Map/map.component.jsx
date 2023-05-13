@@ -1,44 +1,56 @@
-import { useLoadScript, GoogleMap, MarkerF } from "@react-google-maps/api";
 import './map.styles.css';
+import { Loader } from '@googlemaps/js-api-loader';
 
-const mobileStyle = {
-    width: '70vw',
-    height: '60vw'
+const loader = new Loader({
+  apiKey: "AIzaSyB1COhDrkOUQzSm_BOfap0sFdSznXyR91Y",
+  version: "weekly",
+});
+
+const mapOptions = {
+  center: {
+    lat: 35.96638,
+    lng: -78.52467
+  },
+  zoom: 18
 };
 
-const containerStyle = {
-    width: '30vw',
-    height: '20vw'
-}
 
-const style = () => {
-    if (window.innerWidth > 480) {
-        return containerStyle;
-    } else {
-        return mobileStyle;
-    }
-}
-
-
-const onLoad = marker => {
-    console.log('marker: ', marker)
-}
 
 const Map = () => {
-
-    const { isLoaded } = useLoadScript({
-        googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAP_API_KEY
+  
+  loader
+  .load()
+  .then((google) => {
+    const map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    const marker = new google.maps.Marker({
+        position: mapOptions.center,
+        map,
+        title: 'Knife Purveyor, Inc'
     })
+    const contentString = 
+        '<div id="content">' +
+        '<span>Knife Purveyor, Inc.</span>' +
+        '<br/><a href="https://www.google.com/maps/place/100+Siena+Office+Park+Rd,+Wake+Forest,+NC+27587/@35.9663691,-78.5272491,17z/data=!3m1!4b1!4m6!3m5!1s0x89ac517ec9130e2f:0x185d2242dfdc1159!8m2!3d35.9663691!4d-78.5246742!16s%2Fg%2F11ncmngg2h" target="_blank" rel="noopener noreferrer">View on Google Maps</a>' +
+        '</div';
+    const infowindow = new google.maps.InfoWindow({
+        content: contentString,
+        ariaLabel: 'Knife Purveyor, Inc'
+    })
+    marker.addListener("click", () => {
+        infowindow.open({
+            anchor: marker,
+            map,
+        })
+    })
+  })
+  .catch(e => {
+    console.log(e)
+  });
 
-    if(!isLoaded) {
-        return <div>Loading...</div>
-    }
 
     return (
-        <div id="map">
-            <GoogleMap center={{lat: 35.96638, lng: -78.52467}} zoom={18} mapContainerStyle={style()}>
-                <MarkerF onLoad={onLoad} position={{lat: 35.96638, lng: -78.52467}} onClick={() => window.open("https://www.google.com/maps/place/35%C2%B057'59.0%22N+78%C2%B031'28.8%22W/@35.96638,-78.5272449,17z/data=!3m1!4b1!4m4!3m3!8m2!3d35.96638!4d-78.52467", "_blank", "noreferrer")}/>
-            </GoogleMap>
+        <div className='map'>
+            <div id="map"></div>
         </div>
     )
 }

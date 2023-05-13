@@ -1,32 +1,19 @@
 .scroll-container {
     z-index: 2;
     position: absolute;
-    bottom: 5vw;
-    right: 5vw;
+    bottom: 4rem;
+    right: 4rem;
 }
 
 .scroll-to-top {
     color: #c7c7c7;
     opacity: 0.5;
-    height: 3vw;
-    width: 3vw;
+    height: 3rem;
+    width: 3rem;
     position: fixed;
 }
 
 .scroll-to-top:hover {
     opacity: 1;
     cursor: pointer;
-}
-
-@media screen and (max-width: 480px) {
-
-    .scroll-container {
-        bottom: 20vw;
-        right: 20vw;
-    }
-
-    .scroll-to-top {
-        height: 15vw;
-        width: 15vw;
-    }
 }

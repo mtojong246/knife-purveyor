@@ -1,7 +1,7 @@
 .shop-card-container {
     box-shadow: 0 5px 5px grey;
-    width: 20vw;
-    padding-bottom: 2vw;
+    width: 100%;
+    padding-bottom: 2rem;
 }
 
 .shop-card-image img {
@@ -12,7 +12,7 @@
 .shop-card-description {
     text-align: center;
     align-self: flex-start;
-    height: 16vh;
+    height: 10rem;
 }
 
 .shop-card-description span {
@@ -22,27 +22,32 @@
 }
 
 .shop-card-title {
-    padding: 0 1vw;
+    padding: 1rem;
     margin-top: 1vw;
-    max-height: 9vh;
-    overflow: hidden;
+}
+
+.shop-card-title span {
+    font-size: 1rem;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .shop-card-description p {
-    font-size: 0.8vw;
+    font-size: 1rem;
     color: #969696;
+    margin-top: 1rem;
 }
 
 
 .shop-card-container button {
-    font-size: 1vw;
+    font-size: 1rem;
     color: #545454;
     background-color: #EBEBEB;
     border: none;
-    padding: 1vw 2vw;
+    padding: 1rem 2rem;
 }
 
 .shop-card-container button:hover {
@@ -51,32 +56,20 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1000px) {
+
+}
+
+@media screen and (max-width: 780px) {
     .shop-card-container {
-        width: 75vw;
+        width: 25rem;
         padding-bottom: 6vw;
     }
+}
 
-    .shop-card-description {
-        padding: 6vw 8vw;
-        height: 30vh;
-    }
-
-    .shop-card-description span {
-        font-size: 5.5vw;
-    }
-
-    .shop-card-description p {
-        font-size: 4vw;
- 
-    }
-
-    .shop-card-container button {
-        font-size: 5vw;
-        padding: 5vw 6vw;
-    }
-
-    .shop-card-title {
-        max-height: none;
+@media screen and (max-width: 480px) {
+    .shop-card-container {
+        width: 20rem;
+        padding-bottom: 6vw;
     }
 }
