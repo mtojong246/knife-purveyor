@@ -71,6 +71,15 @@
 }
 
 @media screen and (max-width: 780px) {
+    .knowledge-container {
+        text-align: center;
+        padding:0;
+        margin: 5rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 
     .knowledge-title-container {
         width: 25rem;
