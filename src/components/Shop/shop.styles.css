@@ -22,7 +22,7 @@
     grid-template-rows: repeat(autofill, 1fr);
     justify-items: center;
     align-items: center;
-    margin-top: 3vw;
+    margin-top: 3rem;
     gap: 2vw;
 }
 
@@ -62,7 +62,7 @@
         grid-template-rows: repeat(autofill, 1fr);
         justify-items: center;
         align-items: center;
-        margin-top: 3vw;
+        margin-top: 3rem;
         gap: 3vw;
     }
 }
@@ -73,7 +73,7 @@
         margin-top: 8rem;
         justify-content: center;
         align-items: center;
-        gap: 5vh;
+        gap: 3rem;
     }
 
     .shop-cards {
@@ -81,8 +81,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 5vh;
-        gap: 10vw;
+        margin-top: 3rem;
+        gap: 3rem;
     }
 
     .shop-cards-container {
@@ -95,12 +95,8 @@
     .shop-sort-container {
         display: flex;
         flex-direction: column;
-        gap: 10vw;
+        gap: 3rem;
         width: 25rem;
-    }
-
-    .filter-by-price-container hr {
-        margin-bottom: 5vw;
     }
 }
 
@@ -108,7 +104,7 @@
     .shop-sort-container {
         display: flex;
         flex-direction: column;
-        gap: 10vw;
+        gap: 3rem;
         width: 20rem;
     }
 

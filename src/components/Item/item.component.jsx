@@ -38,10 +38,10 @@ const Item = () => {
             <div className='ind-product-container'>
                 <div className='ind-product-img'>
                     <div className='mini-img-container'>
-                        <img src={selectedItem[0].img} alt='img1' onClick={changeImage}/>
-                        <img src={selectedItem[0].img2} alt='img2' onClick={changeImage}/>
-                        <img src={selectedItem[0].img3} alt='img3' onClick={changeImage}/> 
-                        <img src={selectedItem[0].img4} alt='img4' onClick={changeImage}/>
+                        <div><img src={selectedItem[0].img} alt='img1' onClick={changeImage}/></div>
+                        <div><img src={selectedItem[0].img2} alt='img2' onClick={changeImage}/></div>
+                        <div><img src={selectedItem[0].img3} alt='img3' onClick={changeImage}/></div>
+                        <div><img src={selectedItem[0].img4} alt='img4' onClick={changeImage}/></div>
                     </div>
                     <img className='main-product-img' src={image} alt='ind-knife' />
                 </div>

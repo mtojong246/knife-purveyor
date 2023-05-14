@@ -1,31 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
 .ind-product-container {
-    margin: 5vw 0;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 3vw;
+    padding: 0 1rem;
 }
 
 .ind-product-img {
     display: flex; 
-    column-gap: 1vw;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 60vw;
 }
 
 .main-product-img {
-    width: 50vw;
-    height: 43vw;
+    width: 80%;
+    height: 35rem;
     border-radius: 5px;
 }
 
 .mini-img-container {
     display: flex;
     flex-direction: column;
-    row-gap: 1vw;
+    row-gap: 1rem;
+}
+
+.mini-img-container div {
+    width: 100%;
+    height: 8rem;
+    border-radius: 5px;
 }
 
 .mini-img-container img {
-    width: 10vw;
-    height: 10vw;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
 }
 
@@ -37,21 +52,21 @@
 
 .ind-product-info {
     text-align: left;
-    height: 43vw;
-    padding-right: 1vw;
+    height: 35rem;
     width: 30vw;
     overflow-y: scroll;
 }
 
 .ind-product-info p {
-    font-size: 0.8vw;
+    font-size: 1rem;
+    margin: 1rem 0;
 }
 
 .ind-product-info button {
-    padding: 1vw 2vw;
-    font-size: 1vw;
+    padding: 1rem 3rem;
+    font-size: 1rem;
     border: none;
-    margin-bottom: 4vw;
+    margin-bottom: 2rem;
 }
 
 .ind-product-info button:hover {
@@ -61,7 +76,7 @@
 }
 
 .product-name {
-    font-size: 2vw;
+    font-size: 1.5rem;
 }
 
 
@@ -75,8 +90,8 @@
 .product-details span {
     display: inline-block;
     border: 2px solid white;
-    padding: 1vw;
-    font-size: 0.8vw;
+    padding: 1rem;
+    font-size: 0.8rem;
 }
 
 .first {
@@ -87,86 +102,84 @@
     background-color: rgba(102, 102, 153, 0.3)
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1024px) {
     .ind-product-container {
-        margin: 5vh 0;
-        display: flex;
         flex-direction: column;
-        gap: 5vh;
+        gap: 3rem;
+        padding: 0 3rem;
     }
-    
+
     .ind-product-img {
         display: flex; 
         flex-direction: column-reverse;
-        gap: 1vw;
+        gap: 1rem;
+        width: 100%;
     }
-    
-    .main-product-img {
-        width: 80vw;
-        height: 73vw;
-        border-radius: 5px;
-    }
-    
+
     .mini-img-container {
         display: flex;
         flex-direction: row;
-        gap: 1vw;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .main-product-img {
+        width: 100%;
+        height: 50rem;
+        border-radius: 5px;
+    }
+
+    .mini-img-container div {
+        width: 100%;
+        height: 10rem;
     }
     
     .mini-img-container img {
-        width: 19.2vw;
-        height: 19.2vw;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
         border-radius: 5px;
     }
-    
-    .mini-img-container img:hover {
-        cursor: pointer;
-        filter: contrast(50%);
-    }
-    
-    
+
     .ind-product-info {
         text-align: left;
-        height: 50vw;
-        padding-right: 1vw;
-        width: 80vw;
+        height: 36rem;
+        width: 100%;
         overflow-y: scroll;
     }
-    
-    .ind-product-info p {
-        font-size: 4vw;
+}
+
+@media screen and (max-width: 780px) {
+    .ind-product-container {
+        margin-top: 13rem;
+        margin-bottom: 5rem;
     }
-    
-    .ind-product-info button {
-        padding: 2vw 4vw;
-        font-size: 4vw;
-        border: none;
-        margin-bottom: 4vw;
+
+    .main-product-img {
+        width: 100%;
+        height: 35rem;
+        border-radius: 5px;
     }
-    
-    .ind-product-info button:hover {
-        background-color: #6e5b8b;
-        color: white;
-        cursor: pointer;
-    }
-    
-    .product-name {
-        font-size: 5.5vw;
-    }
-    
-    
-    .product-details {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: repeat(autofill, 1f); 
-        
-    }
-    
-    .product-details span {
-        display: inline-block;
-        border: 2px solid white;
-        padding: 1vw;
-        font-size: 4vw;
+
+    .mini-img-container div {
+        width: 100%;
+        height: 8rem;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .main-product-img {
+        width: 100%;
+        height: 20rem;
+        border-radius: 5px;
+    }
+
+    .mini-img-container div {
+        width: 100%;
+        height: 5rem;
+    }
+}
+
+
 

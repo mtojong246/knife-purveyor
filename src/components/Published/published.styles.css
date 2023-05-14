@@ -1,6 +1,6 @@
 .published-container {
     text-align: center;
-    padding: 5rem 0;
+    margin: 5rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,10 +55,6 @@
 }
 
 @media screen and (max-width: 480px) {
-    .published-container {
-        padding-bottom: 10vh;
-    }
-
     .mag-img {
         width: 20rem;
         height: 30rem;
