@@ -1,4 +1,4 @@
-import { signInWithGooglePopup, signInAuthUserWithEmailAndPassword, signOutUser } from '../../utils/firebase/firebase.utils';
+import { signInWithGooglePopup, signInAuthUserWithEmailAndPassword } from '../../utils/firebase/firebase.utils';
 
 import './signIn.styles.css';
 import { Link } from 'react-router-dom';

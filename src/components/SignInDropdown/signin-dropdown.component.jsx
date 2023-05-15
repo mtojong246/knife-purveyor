@@ -13,7 +13,7 @@ const SignInDropdown = () => {
     }
 
     const signOutHandler = async () => {
-        await signOutUser;
+        await signOutUser();
         setCurrentUser(null);
     }
 
