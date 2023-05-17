@@ -4,11 +4,10 @@
     align-items: center;
     margin-top: 10rem;
     margin-bottom: 5rem;
-    padding: 0 10rem;
 }
 
 .signin-container {
-    width: 100%;
+    width: 40%;
 }
 
 .signin-container span {
@@ -60,6 +59,14 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 1000px) {
+
+    .signin-container {
+        width: 70%;
+    }
+}
+
+
 @media screen and (max-width: 780px) {
     .signin {
         display: flex;
@@ -72,6 +79,10 @@
 
     .signin-container button {
         padding: 1rem;
+    }
+
+    .signin-container {
+        width: 100%;
     }
 }
 

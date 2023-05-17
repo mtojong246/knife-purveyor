@@ -7,6 +7,7 @@ export const CategoriesContext = createContext({
     isLoading: true,
 });
 
+
 export const CategoriesProvider = ({children}) => {
     const [ categoriesMap, setCategoriesMap ] = useState({});
     const [ isLoading, setIsLoading ] = useState(true);
