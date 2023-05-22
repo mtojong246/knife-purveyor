@@ -7,17 +7,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown, faCaretUp } from '@fortawesome/free-solid-svg-icons';
 
 import { signOutUser } from '../../utils/firebase/firebase.utils';
-import { useContext } from 'react';
-import { UserContext } from '../../context/user.context';
+
+import { useSelector } from 'react-redux';
+import { selectCurrentUser } from '../../store/user/user-selectors';
 
 const MobileSideBar = () => {
-    const { currentUser, setCurrentUser } = useContext(UserContext);
+    const currentUser = useSelector(selectCurrentUser);
     const [ isMobileShopOpen, setIsMobileShopOpen ] = useState(false);
 
-    const signOutHandler = async () => {
-        await signOutUser;
-        setCurrentUser(null);
-    }
 
     const toggleMobileShop = () => setIsMobileShopOpen(!isMobileShopOpen);
 
@@ -44,7 +41,7 @@ const MobileSideBar = () => {
                     <Link activeClass="active" to="about" spy={true} smooth={true} offset={-80} duration={1000} delay={100}><span>About</span></Link>
                     <span onClick={goToContact}>Contact</span>
                     {currentUser ? (
-                        <span onClick={signOutHandler}>Sign Out</span>
+                        <span onClick={signOutUser}>Sign Out</span>
                     ) : (
                         <span onClick={goToSignIn}>Sign In</span>
                     )}

@@ -1,10 +1,10 @@
 import './filterBy.styles.css';
-import { useContext } from 'react';
-import { CategoriesContext } from '../../context/categories.context';
+import { useSelector } from 'react-redux';
+import { selectCategoriesMap } from '../../store/categories/categories-selectors';
 
 const FilterBy = ({category, onSelectChange}) => {
 
-    const { categoriesMap } = useContext(CategoriesContext);
+    const categoriesMap = useSelector(selectCategoriesMap)
 
     const unsortedArray = Object.keys(categoriesMap).map(title => categoriesMap[title]);
     const sortedArray = unsortedArray.flat().map(product => product[category]).sort()

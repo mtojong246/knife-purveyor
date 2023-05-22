@@ -3,9 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass, faCaretDown, faCaretUp } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
 
-import { Fragment, useState, useContext } from 'react';
+import { Fragment, useState } from 'react';
 import { Outlet, NavLink, useNavigate } from 'react-router-dom';
-import { CartContext } from '../../context/cart.context';
 import { Link, animateScroll as scroll } from 'react-scroll'
 
 import CartDropdown from '../../components/Cart-Dropdown/cart-dropdown.component';
@@ -17,11 +16,17 @@ import SearchBar from '../SearchBar/search-bar.component';
 import ScrollToTop from '../../components/Scroll-To-Top/scroll-to-top.component';
 import MobileNav from '../../components/MobileNav/mobile-nav.component';
 
+import { useSelector, useDispatch } from 'react-redux';
+import { selectIsShopOpen, selectIsCartOpen } from '../../store/cart/cart-selectors';
+import { setIsShopOpen } from '../../store/cart/cart-actions';
+
 
 const Navigation = () => {
     const [isSearchOpen, setIsSearchOpen] = useState(false);
     const [ isSignInOpen, setIsSignInOpen ] = useState(false);
-    const { isCartOpen, isShopOpen, setIsShopOpen } = useContext(CartContext);
+    const isCartOpen = useSelector(selectIsCartOpen);
+    const isShopOpen = useSelector(selectIsShopOpen);
+    const dispatch = useDispatch();
 
     const navigate = useNavigate();
 
@@ -33,7 +38,7 @@ const Navigation = () => {
         navigate('./contact');
     }
 
-    const toggleIsShopOpen = () => setIsShopOpen(!isShopOpen);
+    const toggleIsShopOpen = () => dispatch(setIsShopOpen(!isShopOpen));
     const toggleIsSearchOpen = () => setIsSearchOpen(!isSearchOpen);
     const toggleIsSignInOpen = () => setIsSignInOpen(!isSignInOpen);
 

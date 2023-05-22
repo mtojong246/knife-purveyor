@@ -1,14 +1,17 @@
 import './cart-icon.styles.css';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useContext } from 'react';
-import { CartContext } from '../../context/cart.context';
 import { useNavigate } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+import { selectIsCartOpen, selectCartCount } from '../../store/cart/cart-selectors';
+import { setIsCartOpen } from '../../store/cart/cart-actions';
 
 const CartIcon = () => {
-    const { isCartOpen, setIsCartOpen, cartCount } = useContext(CartContext);
+    const isCartOpen = useSelector(selectIsCartOpen);
+    const cartCount = useSelector(selectCartCount);
 
     const navigate = useNavigate();
+    const dispatch = useDispatch();
 
     const cartHandler = () => {
         if (window.innerWidth <= 480) {
@@ -18,7 +21,7 @@ const CartIcon = () => {
         }
     }
 
-    const toggleIsCartOpen = () => setIsCartOpen(!isCartOpen);
+    const toggleIsCartOpen = () => dispatch(setIsCartOpen(!isCartOpen));
 
     return (
         <div className='cart-icon-container' onClick={cartHandler}>

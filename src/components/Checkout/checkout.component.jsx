@@ -1,13 +1,14 @@
 import './checkout.styles.css';
 import { Link } from 'react-router-dom';
-import { useContext } from 'react';
-import { CartContext } from '../../context/cart.context';
+import { useSelector } from 'react-redux';
+import { selectCartItems, selectCartTotal } from '../../store/cart/cart-selectors';
 import CheckoutItem from '../Checkout-Item/checkout-item.component';
 import PaymentForm from '../Payment-Form/payment-form.component';
 
 
 const Checkout = () => {
-    const { cartItems, cartTotal } = useContext(CartContext);
+    const cartItems = useSelector(selectCartItems);
+    const cartTotal = useSelector(selectCartTotal);
 
     return (
         <>

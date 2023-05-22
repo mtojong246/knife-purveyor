@@ -1,14 +1,19 @@
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 import './payment-form.styles.scss';
-import { useState, useContext } from "react";
-import { CartContext } from "../../context/cart.context";
-import { UserContext } from "../../context/user.context";
+import { useState } from "react";
 import SpinnerButton from "../SpinnerButton/spinner-button.component";
 
+import { useSelector, useDispatch } from "react-redux";
+import { selectCurrentUser } from '../../store/user/user-selectors';
+import { selectCartTotal } from "../../store/cart/cart-selectors";
+import { clearAllItems } from "../../store/cart/cart-actions";
+
 const PaymentForm = () => {
-    const { cartTotal, clearAllItems } = useContext(CartContext);
-    const { currentUser } = useContext(UserContext);
     const [ isProcessing, setIsProcessing ] = useState(false);
+
+    const dispatch = useDispatch();
+    const currentUser = useSelector(selectCurrentUser);
+    const cartTotal = useSelector(selectCartTotal);
 
     const stripe = useStripe();
     const elements = useElements();
@@ -48,7 +53,7 @@ const PaymentForm = () => {
         } else {
             if (paymentResult.paymentIntent.status === 'succeeded') {
                 alert('Payment successful!')
-                clearAllItems();
+                dispatch(clearAllItems());
             }
         }
     }

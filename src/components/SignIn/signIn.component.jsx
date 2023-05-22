@@ -2,8 +2,7 @@ import { signInWithGooglePopup, signInAuthUserWithEmailAndPassword } from '../..
 
 import './signIn.styles.css';
 import { Link } from 'react-router-dom';
-import { useState, useEffect, useContext } from 'react';
-import { UserContext } from '../../context/user.context';
+import { useState, useEffect } from 'react';
 
 const defaultFormFields = {
     email: '',
@@ -13,7 +12,6 @@ const defaultFormFields = {
 const SignIn = () => {
     const [formFields, setFormFields] = useState(defaultFormFields);
     const { email, password } = formFields;
-    const { currentUser } = useContext(UserContext);
 
     const resetFormFields = () => {
         setFormFields(defaultFormFields);

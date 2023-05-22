@@ -1,11 +1,13 @@
 import './shop-card.styles.css';
-import { useContext } from 'react';
-import { CartContext } from '../../context/cart.context';
 import { Link } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+import { addItemToCart } from '../../store/cart/cart-actions';
+import { selectCartItems } from '../../store/cart/cart-selectors';
 
 const ShopCard = ({ product }) => {
     const { img, name, price } = product; 
-    const { addItemToCart } = useContext(CartContext);
+    const cartItems = useSelector(selectCartItems);
+    const dispatch = useDispatch();
 
     const newName = name.toLowerCase().replace(/\s+/g, '-') 
 
@@ -22,7 +24,7 @@ const ShopCard = ({ product }) => {
                 </div> 
                 <p>${price}.00</p>
             </div>
-            <button type='button' onClick={() => addItemToCart(product)}>Add to cart</button>
+            <button type='button' onClick={() => dispatch(addItemToCart(cartItems, product))}>Add to cart</button>
         </div>
     )
 }

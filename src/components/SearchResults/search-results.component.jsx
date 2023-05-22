@@ -1,13 +1,14 @@
 import './search-results.styles.css';
 import { useParams } from 'react-router-dom';
-import { useState, useEffect, useContext } from 'react';
-import { CategoriesContext } from '../../context/categories.context';
+import { useState, useEffect } from 'react';
 import ShopCard from '../Shop-Card/shop-card.component';
+import { useSelector } from 'react-redux';
+import { selectCategoriesMap } from '../../store/categories/categories-selectors';
 
 
 const SearchResults = () => {
     const { result } = useParams();
-    const { categoriesMap } = useContext(CategoriesContext);
+    const categoriesMap = useSelector(selectCategoriesMap)
     const [ searchResults, setSearchResults ] = useState([]);
 
     useEffect(() => {

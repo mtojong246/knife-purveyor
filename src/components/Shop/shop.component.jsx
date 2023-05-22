@@ -1,19 +1,18 @@
 import './shop.styles.css';
 import ShopCard from '../Shop-Card/shop-card.component';
 import PriceSlider from '../PriceSlider/price-slider.component';
-//import FilterByMaker from '../FilterByMaker/filterByMaker.component';
 import FilterBy from '../FilterBy/filterBy.component';
 import Spinner from '../Spinner/spinner.component';
-
-import { useState, useEffect, useContext, Fragment } from 'react';
-import { CategoriesContext } from '../../context/categories.context';
+import { useSelector } from 'react-redux';
+import { useState, useEffect, Fragment } from 'react';
+import { selectCategoriesMap, selectIsLoading } from '../../store/categories/categories-selectors';
 
 const Shop = () => {
-    const { categoriesMap, isLoading } = useContext(CategoriesContext);
+    const categoriesMap = useSelector(selectCategoriesMap);
+    const isLoading = useSelector(selectIsLoading);
     const [filteredProducts, setFilteredProducts] = useState(categoriesMap);
     const [minPrice, setMinPrice] = useState(0);
     const [maxPrice, setMaxPrice] = useState(36500);
-    //const [selected, setSelected] = useState('');
     
 
     const filterArray = ['knife-maker', 'blade-material', 'locking-mechanism', 'scale-material', 'condition']

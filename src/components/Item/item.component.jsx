@@ -1,16 +1,20 @@
 import './item.styles.css';
-import { useState, useContext, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { CategoriesContext } from '../../context/categories.context';
-import { CartContext } from '../../context/cart.context';
 import Spinner from '../Spinner/spinner.component';
+import { useSelector, useDispatch } from 'react-redux';
+import { selectCategoriesMap } from '../../store/categories/categories-selectors';
+import { selectCartItems } from '../../store/cart/cart-selectors';
+import { addItemToCart } from '../../store/cart/cart-actions';
 
 const Item = () => {
     const { item } = useParams();
-    const { categoriesMap } = useContext(CategoriesContext)
-    const { addItemToCart } = useContext(CartContext);
+    const categoriesMap = useSelector(selectCategoriesMap);
     const [selectedItem, setSelectedItem] = useState([])
     const [image, setImage] = useState('')
+
+    const dispatch = useDispatch();
+    const cartItems = useSelector(selectCartItems);
 
     useEffect(() => {
         const newItem = (Object.keys(categoriesMap).map(title => categoriesMap[title]).flat().filter(product => product.name.toLowerCase() === item.toLowerCase().replace(/-/g, ' ') ))
@@ -27,8 +31,6 @@ const Item = () => {
         let newImg = event.target.src;
         setImage(newImg)
     }
-
-    console.log(categoriesMap)
 
     return (
         <>
@@ -48,7 +50,7 @@ const Item = () => {
                 <div className='ind-product-info'>
                     <span className='product-name'>{selectedItem[0].name}</span>
                     <p>${selectedItem[0].price}.00</p>
-                    <button onClick={() => addItemToCart(selectedItem[0])}>Add to Cart</button>
+                    <button onClick={() => dispatch(addItemToCart(cartItems, selectedItem[0]))}>Add to Cart</button>
                     <p>Product Details</p>
                     <div className='product-details'>
                         <span className='first'>Knife Maker</span><span className='second'>{selectedItem[0]['knife-maker']}</span>

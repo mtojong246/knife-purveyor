@@ -4,13 +4,15 @@ import PriceSlider from '../PriceSlider/price-slider.component';
 import Spinner from '../Spinner/spinner.component';
 
 import { useParams } from 'react-router-dom';
-import { useContext, useState, useEffect } from 'react';
-import { CategoriesContext } from '../../context/categories.context';
+import { useState, useEffect } from 'react';
 import FilterBy from '../FilterBy/filterBy.component';
+import { useSelector } from 'react-redux';
+import { selectCategoriesMap, selectIsLoading } from '../../store/categories/categories-selectors';
 
 const Category = () => {
     const { category } = useParams();
-    const { categoriesMap, isLoading } = useContext(CategoriesContext);
+    const categoriesMap = useSelector(selectCategoriesMap);
+    const isLoading = useSelector(selectIsLoading)
     const [filteredProducts, setFilteredProducts] = useState(categoriesMap[category]);
     const [minPrice, setMinPrice] = useState(0);
     const [maxPrice, setMaxPrice] = useState(36500);
