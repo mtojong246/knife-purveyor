@@ -14,7 +14,7 @@ export function* getSnapshotFromUserAuth(userAuth, additionalInformation) {
 
 export function* signInWithEmail({ payload: { email, password } }) {
     try {
-        const { user } = yield call(signInAuthUserWithEmailAndPassword(), email, password);
+        const { user } = yield call(signInAuthUserWithEmailAndPassword, email, password);
         yield call(getSnapshotFromUserAuth, user);
     } catch(error) {
         yield put(signInFailed(error))
@@ -23,7 +23,7 @@ export function* signInWithEmail({ payload: { email, password } }) {
 
 export function* signInWithGoogle() {
     try {
-        const { user } = yield call(signInWithGooglePopup());
+        const { user } = yield call(signInWithGooglePopup);
         yield call(getSnapshotFromUserAuth, user);
     } catch(error) {
         yield put(signInFailed(error))
