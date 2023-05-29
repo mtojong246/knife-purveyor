@@ -1,12 +1,17 @@
 import './signin-dropdown.styles.css';
 import { useNavigate } from 'react-router-dom';
-import { signOutUser } from '../../utils/firebase/firebase.utils';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { selectCurrentUser } from '../../store/user/user-selectors';
+import { signOutStart } from '../../store/user/user-actions';
+
+
 
 const SignInDropdown = () => {
     const currentUser = useSelector(selectCurrentUser)
     const navigate = useNavigate();
+    const dispatch = useDispatch();
+
+    const signOutUser = () => dispatch(signOutStart());
 
     const goToSignIn = () => {
         navigate('./sign-in')

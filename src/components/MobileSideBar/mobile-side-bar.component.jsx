@@ -6,15 +6,16 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown, faCaretUp } from '@fortawesome/free-solid-svg-icons';
 
-import { signOutUser } from '../../utils/firebase/firebase.utils';
-
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { selectCurrentUser } from '../../store/user/user-selectors';
+import { signOutStart } from '../../store/user/user-actions';
 
 const MobileSideBar = () => {
     const currentUser = useSelector(selectCurrentUser);
     const [ isMobileShopOpen, setIsMobileShopOpen ] = useState(false);
+    const dispatch = useDispatch();
 
+    const signOutUser = () => dispatch(signOutStart());
 
     const toggleMobileShop = () => setIsMobileShopOpen(!isMobileShopOpen);
 
